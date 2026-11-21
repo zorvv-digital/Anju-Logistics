@@ -1,0 +1,2191 @@
+{
+ "parties": [
+  {
+   "id": "p1",
+   "name": "Nihar Industries",
+   "gst": null,
+   "address": null,
+   "phone": null
+  },
+  {
+   "id": "p2",
+   "name": "P Mac Machines",
+   "gst": "32AAJFP1590K1Z3",
+   "address": null,
+   "phone": null
+  },
+  {
+   "id": "p3",
+   "name": "Cortland International",
+   "gst": null,
+   "address": null,
+   "phone": null
+  },
+  {
+   "id": "p4",
+   "name": "Pee Key Enterprises",
+   "gst": "32AL1PP8511G1ZG",
+   "address": null,
+   "phone": null
+  },
+  {
+   "id": "p5",
+   "name": "Rajvi Extrusion Pvt Ltd",
+   "gst": null,
+   "address": null,
+   "phone": null
+  },
+  {
+   "id": "p6",
+   "name": "Marai Doors",
+   "gst": "32CJLPM3523L3Z1",
+   "address": null,
+   "phone": null
+  },
+  {
+   "id": "p7",
+   "name": "Kwality Steel",
+   "gst": null,
+   "address": null,
+   "phone": null
+  },
+  {
+   "id": "p8",
+   "name": "Eternal Enterprises",
+   "gst": "32AAFFE2623Q1ZE",
+   "address": null,
+   "phone": null
+  },
+  {
+   "id": "p9",
+   "name": "Rowthers Ropes And Nets",
+   "gst": "32ABEFR0247D1ZR",
+   "address": null,
+   "phone": null
+  },
+  {
+   "id": "p10",
+   "name": "Alexi Plastwood",
+   "gst": null,
+   "address": null,
+   "phone": null
+  },
+  {
+   "id": "p11",
+   "name": "Cosco Trading",
+   "gst": "32AHNPA0684N2Z7",
+   "address": null,
+   "phone": null
+  },
+  {
+   "id": "p12",
+   "name": "Tufropes Pvt Ltd",
+   "gst": null,
+   "address": null,
+   "phone": null
+  },
+  {
+   "id": "p13",
+   "name": "Sng Eco India Pvt Ltd",
+   "gst": null,
+   "address": null,
+   "phone": null
+  },
+  {
+   "id": "p14",
+   "name": "Door House",
+   "gst": "32HDPPS0452F2ZF",
+   "address": null,
+   "phone": null
+  },
+  {
+   "id": "p15",
+   "name": "Sk Traders",
+   "gst": null,
+   "address": null,
+   "phone": null
+  },
+  {
+   "id": "p16",
+   "name": "Crown Metal Craft",
+   "gst": "32DGVPS1766M1ZI",
+   "address": null,
+   "phone": null
+  },
+  {
+   "id": "p17",
+   "name": "Ecofresh Carbon",
+   "gst": null,
+   "address": null,
+   "phone": null
+  },
+  {
+   "id": "p18",
+   "name": "Cure Carb",
+   "gst": "24AAUFC8515E1ZC",
+   "address": null,
+   "phone": null
+  },
+  {
+   "id": "p19",
+   "name": "Preesha Lubricant",
+   "gst": null,
+   "address": null,
+   "phone": null
+  },
+  {
+   "id": "p20",
+   "name": "Oil World",
+   "gst": "32DNQPS5693D1ZH",
+   "address": null,
+   "phone": null
+  },
+  {
+   "id": "p21",
+   "name": "Bhavani Metal Trading",
+   "gst": null,
+   "address": null,
+   "phone": null
+  },
+  {
+   "id": "p22",
+   "name": "Aeroplast Profile",
+   "gst": null,
+   "address": null,
+   "phone": null
+  },
+  {
+   "id": "p23",
+   "name": "Kaliyankara Trading Co",
+   "gst": "32ADMPV6729J1ZY",
+   "address": null,
+   "phone": null
+  },
+  {
+   "id": "p24",
+   "name": "Arvalli Castor Derivatives Pvt Ltd",
+   "gst": null,
+   "address": null,
+   "phone": null
+  },
+  {
+   "id": "p25",
+   "name": "Alfah Associates",
+   "gst": "32AGVPB5488L1ZT",
+   "address": null,
+   "phone": null
+  },
+  {
+   "id": "p26",
+   "name": "Rithus",
+   "gst": "32BJZPA1260R1ZS",
+   "address": null,
+   "phone": null
+  },
+  {
+   "id": "p27",
+   "name": "Shree Umiya F-Tech Machines",
+   "gst": null,
+   "address": null,
+   "phone": null
+  },
+  {
+   "id": "p28",
+   "name": "Nuvon",
+   "gst": "32AAZFN9318H1ZQ",
+   "address": null,
+   "phone": null
+  },
+  {
+   "id": "p29",
+   "name": "Techno Group",
+   "gst": "32AFJPH3067E1ZT",
+   "address": null,
+   "phone": null
+  },
+  {
+   "id": "p30",
+   "name": "Felice Home Woods Gallery",
+   "gst": "32AAKFF5279L1Z0",
+   "address": null,
+   "phone": null
+  },
+  {
+   "id": "p31",
+   "name": "Antique Plast Industries Llp",
+   "gst": null,
+   "address": null,
+   "phone": null
+  },
+  {
+   "id": "p32",
+   "name": "Royal Glass Stationery",
+   "gst": "32AAKFR6233J1Z4",
+   "address": null,
+   "phone": null
+  },
+  {
+   "id": "p33",
+   "name": "Hc Agri Fresh Pvt Ltd",
+   "gst": null,
+   "address": null,
+   "phone": null
+  },
+  {
+   "id": "p34",
+   "name": "Tm Yohu & Vp Hashim",
+   "gst": null,
+   "address": null,
+   "phone": null
+  },
+  {
+   "id": "p35",
+   "name": "Nalakath Spices Trading Co",
+   "gst": "32AAEFN8338CIZJ",
+   "address": null,
+   "phone": null
+  },
+  {
+   "id": "p36",
+   "name": "Cg Carbon India Pvt Ltd",
+   "gst": null,
+   "address": null,
+   "phone": null
+  },
+  {
+   "id": "p37",
+   "name": "Bela Carbon And Chemical",
+   "gst": "24AAHHP8633D1Z7",
+   "address": null,
+   "phone": null
+  },
+  {
+   "id": "p38",
+   "name": "Terra Plastwood Llp",
+   "gst": null,
+   "address": null,
+   "phone": null
+  },
+  {
+   "id": "p39",
+   "name": "Jr Cube Plastwood",
+   "gst": "32BSSPJ3100P1ZL",
+   "address": null,
+   "phone": null
+  },
+  {
+   "id": "p40",
+   "name": "20 Microns Nano Minerals Ltd",
+   "gst": null,
+   "address": null,
+   "phone": null
+  },
+  {
+   "id": "p41",
+   "name": "Torronto Marketing",
+   "gst": "32AAVFT1996P1Z3",
+   "address": null,
+   "phone": null
+  },
+  {
+   "id": "p42",
+   "name": "Febix Polypack Llp",
+   "gst": null,
+   "address": null,
+   "phone": null
+  },
+  {
+   "id": "p43",
+   "name": "Absolute Colours And Chemicals",
+   "gst": "32ABWFA4526A1ZQ",
+   "address": null,
+   "phone": null
+  },
+  {
+   "id": "p44",
+   "name": "Dev Polpack",
+   "gst": null,
+   "address": null,
+   "phone": null
+  },
+  {
+   "id": "p45",
+   "name": "Chemex Construction Pvt Ltd",
+   "gst": null,
+   "address": null,
+   "phone": null
+  },
+  {
+   "id": "p46",
+   "name": "Ssm Enterprises",
+   "gst": "32AIJPN1089R1ZN",
+   "address": null,
+   "phone": null
+  },
+  {
+   "id": "p47",
+   "name": "Dmcc Speciality Chemicals",
+   "gst": null,
+   "address": null,
+   "phone": null
+  },
+  {
+   "id": "p48",
+   "name": "Meron",
+   "gst": "32AAEFM5740K1ZB",
+   "address": null,
+   "phone": null
+  },
+  {
+   "id": "p49",
+   "name": "Riddhi Engineers",
+   "gst": null,
+   "address": null,
+   "phone": null
+  },
+  {
+   "id": "p50",
+   "name": "Pavithran T",
+   "gst": null,
+   "address": null,
+   "phone": null
+  },
+  {
+   "id": "p51",
+   "name": "Ronak Engineering",
+   "gst": null,
+   "address": null,
+   "phone": null
+  },
+  {
+   "id": "p52",
+   "name": "Baroda Crusher Wares",
+   "gst": "32AAIFB4780G1ZL",
+   "address": null,
+   "phone": null
+  },
+  {
+   "id": "p53",
+   "name": "Jrn Foundry Pvt Ltd",
+   "gst": null,
+   "address": null,
+   "phone": null
+  },
+  {
+   "id": "p54",
+   "name": "Bhagavati Timber Mart",
+   "gst": null,
+   "address": null,
+   "phone": null
+  },
+  {
+   "id": "p55",
+   "name": "Shivam Traders",
+   "gst": null,
+   "address": null,
+   "phone": null
+  },
+  {
+   "id": "p56",
+   "name": "Appachi Enterprises",
+   "gst": null,
+   "address": null,
+   "phone": null
+  },
+  {
+   "id": "p57",
+   "name": "Hd Marketing",
+   "gst": "32AAKFH9309K1Z5",
+   "address": null,
+   "phone": null
+  },
+  {
+   "id": "p58",
+   "name": "Ashwin Vanaspati Industries P Ltd",
+   "gst": null,
+   "address": null,
+   "phone": null
+  },
+  {
+   "id": "p59",
+   "name": "Lasea General Trading P Ltd",
+   "gst": null,
+   "address": null,
+   "phone": null
+  },
+  {
+   "id": "p60",
+   "name": "Om Shree Traders",
+   "gst": null,
+   "address": null,
+   "phone": null
+  },
+  {
+   "id": "p61",
+   "name": "Shameel Traders",
+   "gst": null,
+   "address": null,
+   "phone": null
+  }
+ ],
+ "owners": [
+  {
+   "id": "o1",
+   "name": "Abdul Kareem P K",
+   "pan": null,
+   "phone": null
+  },
+  {
+   "id": "o2",
+   "name": "Mohd Shameen Mp",
+   "pan": "AXXPM8181C",
+   "phone": null
+  },
+  {
+   "id": "o3",
+   "name": "Mm Najeeb",
+   "pan": null,
+   "phone": null
+  },
+  {
+   "id": "o4",
+   "name": "Nisel Babu",
+   "pan": null,
+   "phone": null
+  },
+  {
+   "id": "o5",
+   "name": "Sanal Chandran",
+   "pan": "FWBPS1550R",
+   "phone": null
+  },
+  {
+   "id": "o6",
+   "name": "Mohd Saidh",
+   "pan": "FPGPM7678L",
+   "phone": null
+  },
+  {
+   "id": "o7",
+   "name": "Ashir Vp",
+   "pan": "AIPPA6151P",
+   "phone": null
+  },
+  {
+   "id": "o8",
+   "name": "Pushpa G",
+   "pan": null,
+   "phone": null
+  },
+  {
+   "id": "o9",
+   "name": "Khader",
+   "pan": null,
+   "phone": null
+  },
+  {
+   "id": "o10",
+   "name": "Keerthi",
+   "pan": null,
+   "phone": null
+  },
+  {
+   "id": "o11",
+   "name": "Gh Transport",
+   "pan": null,
+   "phone": null
+  },
+  {
+   "id": "o12",
+   "name": "Dwarkesh Logistics",
+   "pan": null,
+   "phone": null
+  },
+  {
+   "id": "o13",
+   "name": "Mohd Shafi",
+   "pan": "FAHPM4620J",
+   "phone": null
+  },
+  {
+   "id": "o14",
+   "name": "Vishnu Pb",
+   "pan": "HFKPB8382E",
+   "phone": null
+  },
+  {
+   "id": "o15",
+   "name": "Jj Transport",
+   "pan": null,
+   "phone": null
+  },
+  {
+   "id": "o16",
+   "name": "Go Logistics",
+   "pan": null,
+   "phone": null
+  },
+  {
+   "id": "o17",
+   "name": "Ummar Ca",
+   "pan": null,
+   "phone": null
+  },
+  {
+   "id": "o18",
+   "name": "Malabar Transport And Roadways",
+   "pan": null,
+   "phone": null
+  },
+  {
+   "id": "o19",
+   "name": "Sreekanth",
+   "pan": null,
+   "phone": null
+  }
+ ],
+ "trucks": [
+  {
+   "id": "t1",
+   "number": "KL11CC0842",
+   "ownerId": "o1"
+  },
+  {
+   "id": "t2",
+   "number": "KL85D1606",
+   "ownerId": "o2"
+  },
+  {
+   "id": "t3",
+   "number": "KL49H9086",
+   "ownerId": "o3"
+  },
+  {
+   "id": "t4",
+   "number": "KL37F5174",
+   "ownerId": "o4"
+  },
+  {
+   "id": "t5",
+   "number": "KL01AU1744",
+   "ownerId": "o5"
+  },
+  {
+   "id": "t6",
+   "number": "KL57AB8491",
+   "ownerId": "o6"
+  },
+  {
+   "id": "t7",
+   "number": "KL57U4675",
+   "ownerId": "o7"
+  },
+  {
+   "id": "t8",
+   "number": "TN28BJ8732",
+   "ownerId": "o8"
+  },
+  {
+   "id": "t9",
+   "number": "KL57AE5769",
+   "ownerId": "o9"
+  },
+  {
+   "id": "t10",
+   "number": "KL40W2181",
+   "ownerId": "o13"
+  },
+  {
+   "id": "t11",
+   "number": "TN52AD4066",
+   "ownerId": "o10"
+  },
+  {
+   "id": "t12",
+   "number": "KL63K0289",
+   "ownerId": "o11"
+  },
+  {
+   "id": "t13",
+   "number": "KA01AU1744",
+   "ownerId": "o5"
+  },
+  {
+   "id": "t14",
+   "number": "HR38AA2944",
+   "ownerId": "o12"
+  },
+  {
+   "id": "t15",
+   "number": "KL46AC2493",
+   "ownerId": "o14"
+  },
+  {
+   "id": "t16",
+   "number": "GJ38TA3397",
+   "ownerId": "o15"
+  },
+  {
+   "id": "t17",
+   "number": "KL43S0691",
+   "ownerId": "o16"
+  },
+  {
+   "id": "t18",
+   "number": "KL45Y7953",
+   "ownerId": "o17"
+  },
+  {
+   "id": "t19",
+   "number": "GJ27TJ3497",
+   "ownerId": "o18"
+  },
+  {
+   "id": "t20",
+   "number": "TN78MB4528",
+   "ownerId": null
+  },
+  {
+   "id": "t21",
+   "number": "KL11CC3757",
+   "ownerId": "o19"
+  },
+  {
+   "id": "t22",
+   "number": "KL58AH1029",
+   "ownerId": null
+  }
+ ],
+ "drivers": [
+  {
+   "id": "d1",
+   "name": "Vipin",
+   "phone": "9037002412"
+  },
+  {
+   "id": "d2",
+   "name": "Driver",
+   "phone": "9544800756"
+  },
+  {
+   "id": "d3",
+   "name": "Driver",
+   "phone": "9003558426"
+  },
+  {
+   "id": "d4",
+   "name": "Driver",
+   "phone": "9745149809"
+  },
+  {
+   "id": "d5",
+   "name": "Driver",
+   "phone": "9677538058"
+  },
+  {
+   "id": "d6",
+   "name": "Latheesh",
+   "phone": null
+  }
+ ],
+ "places": [
+  {
+   "id": "p1",
+   "name": "Ahmedabad"
+  },
+  {
+   "id": "p2",
+   "name": "Cochin"
+  },
+  {
+   "id": "p3",
+   "name": "Vadodara"
+  },
+  {
+   "id": "p4",
+   "name": "Parappanangadi"
+  },
+  {
+   "id": "p5",
+   "name": "Surat"
+  },
+  {
+   "id": "p6",
+   "name": "Mannarkadu"
+  },
+  {
+   "id": "p7",
+   "name": "Kannur"
+  },
+  {
+   "id": "p8",
+   "name": "Ernakulam"
+  },
+  {
+   "id": "p9",
+   "name": "Rajkot"
+  },
+  {
+   "id": "p10",
+   "name": "Calicut"
+  },
+  {
+   "id": "p11",
+   "name": "Kodakara"
+  },
+  {
+   "id": "p12",
+   "name": "Kanjhangad"
+  },
+  {
+   "id": "p13",
+   "name": "Tirunelveli"
+  },
+  {
+   "id": "p14",
+   "name": "Morbi"
+  },
+  {
+   "id": "p15",
+   "name": "Anand"
+  },
+  {
+   "id": "p16",
+   "name": "Trissur"
+  },
+  {
+   "id": "p17",
+   "name": "Padra"
+  },
+  {
+   "id": "p18",
+   "name": "Kuttichira"
+  },
+  {
+   "id": "p19",
+   "name": "Calicut"
+  },
+  {
+   "id": "p20",
+   "name": "Tirur & Kannur"
+  },
+  {
+   "id": "p21",
+   "name": "Malappuram"
+  },
+  {
+   "id": "p22",
+   "name": "Bilimora"
+  },
+  {
+   "id": "p23",
+   "name": "Alappuzha"
+  },
+  {
+   "id": "p24",
+   "name": "Dahej"
+  },
+  {
+   "id": "p25",
+   "name": "Por, Vadodara"
+  },
+  {
+   "id": "p26",
+   "name": "Perumbavoor"
+  },
+  {
+   "id": "p27",
+   "name": "Mukkam"
+  },
+  {
+   "id": "p28",
+   "name": "Kota, Karnataka"
+  },
+  {
+   "id": "p29",
+   "name": "Kondotty"
+  }
+ ],
+ "lrs": [
+  {
+   "id": "lr1",
+   "company": "logistics",
+   "lrNo": 887,
+   "date": "2026-09-15",
+   "consignorId": "p1",
+   "consigneeId": "p2",
+   "from": "Ahmedabad",
+   "to": "Cochin",
+   "material": "Edge Bander",
+   "billTo": "consignee",
+   "billAmount": 0,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [],
+   "truckId": "t1",
+   "driverId": null,
+   "freight": 0,
+   "ownerPayments": [],
+   "includedIn": 884,
+   "status": "delivered",
+   "loadedOn": "2026-09-15",
+   "deliveredOn": "2026-09-21",
+   "remarks": "Delivered on 21Sep",
+   "locations": []
+  },
+  {
+   "id": "lr2",
+   "company": "logistics",
+   "lrNo": 889,
+   "date": "2026-09-17",
+   "consignorId": "p3",
+   "consigneeId": "p4",
+   "from": "Vadodara",
+   "to": "Parappanangadi",
+   "material": "Fishing Net- 12Mt",
+   "billTo": "consignee",
+   "billAmount": 90000,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "pay2r",
+     "date": "2026-09-25",
+     "amount": 90000,
+     "note": "Imported from Excel"
+    }
+   ],
+   "truckId": "t2",
+   "driverId": null,
+   "freight": 85000,
+   "ownerPayments": [
+    {
+     "id": "pay2o",
+     "date": "2026-09-17",
+     "amount": 83000,
+     "note": "Advance (imported)"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-09-17",
+   "deliveredOn": "2026-09-21",
+   "remarks": "Delivered on 21Sep",
+   "locations": []
+  },
+  {
+   "id": "lr3",
+   "company": "logistics",
+   "lrNo": 890,
+   "date": "2026-09-17",
+   "consignorId": "p5",
+   "consigneeId": "p6",
+   "from": "Surat",
+   "to": "Mannarkadu",
+   "material": "Pvc Sheets & Sections- 2Mt",
+   "billTo": "consignee",
+   "billAmount": 18000,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "pay3r",
+     "date": "2026-09-25",
+     "amount": 18000,
+     "note": "Imported from Excel"
+    }
+   ],
+   "truckId": "t3",
+   "driverId": null,
+   "freight": 0,
+   "ownerPayments": [],
+   "includedIn": 881,
+   "status": "delivered",
+   "loadedOn": "2026-09-17",
+   "deliveredOn": "2026-09-24",
+   "remarks": "Delivered on 24Sep",
+   "locations": []
+  },
+  {
+   "id": "lr4",
+   "company": "logistics",
+   "lrNo": 891,
+   "date": "2026-09-17",
+   "consignorId": "p7",
+   "consigneeId": "p8",
+   "from": "Ahmedabad",
+   "to": "Kannur",
+   "material": "Ss Utensils-2.778Mt",
+   "billTo": "consignee",
+   "billAmount": 19600,
+   "discount": 0,
+   "payMode": "topay",
+   "receipts": [
+    {
+     "id": "pay4r",
+     "date": "2026-09-25",
+     "amount": 19600,
+     "note": "Imported from Excel"
+    }
+   ],
+   "truckId": "t4",
+   "driverId": null,
+   "freight": 19600,
+   "ownerPayments": [],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-09-17",
+   "deliveredOn": null,
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lr5",
+   "company": "logistics",
+   "lrNo": 892,
+   "date": "2026-09-18",
+   "consignorId": "p3",
+   "consigneeId": "p9",
+   "from": "Vadodara",
+   "to": "Ernakulam",
+   "material": "Fishing Net- 12Mt",
+   "billTo": "consignee",
+   "billAmount": 92000,
+   "discount": 920,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "pay5r",
+     "date": "2026-09-26",
+     "amount": 91080,
+     "note": "Imported from Excel"
+    }
+   ],
+   "truckId": "t5",
+   "driverId": null,
+   "freight": 90000,
+   "ownerPayments": [
+    {
+     "id": "pay5o",
+     "date": "2026-09-18",
+     "amount": 88000,
+     "note": "Advance (imported)"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-09-18",
+   "deliveredOn": "2026-09-22",
+   "remarks": "Delivered on 22Sep",
+   "locations": []
+  },
+  {
+   "id": "lr6",
+   "company": "logistics",
+   "lrNo": 893,
+   "date": "2026-09-19",
+   "consignorId": "p10",
+   "consigneeId": "p11",
+   "from": "Rajkot",
+   "to": "Calicut",
+   "material": "Wpc Door Frame-7.33Mt",
+   "billTo": "consignee",
+   "billAmount": 73500,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "pay6r",
+     "date": "2026-09-27",
+     "amount": 73500,
+     "note": "Imported from Excel"
+    }
+   ],
+   "truckId": "t4",
+   "driverId": null,
+   "freight": 63900,
+   "ownerPayments": [
+    {
+     "id": "pay6o",
+     "date": "2026-09-19",
+     "amount": 61900,
+     "note": "Advance (imported)"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-09-19",
+   "deliveredOn": null,
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lr7",
+   "company": "logistics",
+   "lrNo": 894,
+   "date": "2026-09-19",
+   "consignorId": "p12",
+   "consigneeId": "p4",
+   "from": "Vadodara",
+   "to": "Parappanangadi",
+   "material": "Fishing Net- 12Mt",
+   "billTo": "consignee",
+   "billAmount": 90000,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "pay7r",
+     "date": "2026-09-27",
+     "amount": 90000,
+     "note": "Imported from Excel"
+    }
+   ],
+   "truckId": "t6",
+   "driverId": "d1",
+   "freight": 85000,
+   "ownerPayments": [
+    {
+     "id": "pay7o",
+     "date": "2026-09-19",
+     "amount": 83000,
+     "note": "Advance (imported)"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-09-19",
+   "deliveredOn": null,
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lr8",
+   "company": "logistics",
+   "lrNo": 895,
+   "date": "2026-09-20",
+   "consignorId": "p13",
+   "consigneeId": "p14",
+   "from": "Ahmedabad",
+   "to": "Kodakara",
+   "material": "Wpcs Door Frame-7.970Mt",
+   "billTo": "consignee",
+   "billAmount": 40000,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "pay8r",
+     "date": "2026-09-28",
+     "amount": 40000,
+     "note": "Imported from Excel"
+    }
+   ],
+   "truckId": "t7",
+   "driverId": "d2",
+   "freight": 31000,
+   "ownerPayments": [
+    {
+     "id": "pay8o",
+     "date": "2026-09-20",
+     "amount": 29000,
+     "note": "Advance (imported)"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-09-20",
+   "deliveredOn": "2026-09-25",
+   "remarks": "Delivered on 25Sep",
+   "locations": []
+  },
+  {
+   "id": "lr9",
+   "company": "logistics",
+   "lrNo": 896,
+   "date": "2026-09-19",
+   "consignorId": "p15",
+   "consigneeId": "p16",
+   "from": "Ahmedabad",
+   "to": "Kanjhangad",
+   "material": "Ss Utensils-355Kg",
+   "billTo": "consignee",
+   "billAmount": 2500,
+   "discount": 0,
+   "payMode": "topay",
+   "receipts": [
+    {
+     "id": "pay9r",
+     "date": "2026-09-27",
+     "amount": 2500,
+     "note": "Imported from Excel"
+    }
+   ],
+   "truckId": "t4",
+   "driverId": null,
+   "freight": 2500,
+   "ownerPayments": [],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-09-19",
+   "deliveredOn": null,
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lr10",
+   "company": "logistics",
+   "lrNo": 897,
+   "date": "2026-09-20",
+   "consignorId": "p17",
+   "consigneeId": "p18",
+   "from": "Tirunelveli",
+   "to": "Morbi",
+   "material": "Activated Carbon- 28Mt",
+   "billTo": "consignee",
+   "billAmount": 130000,
+   "discount": 1300,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "pay10r",
+     "date": "2026-09-28",
+     "amount": 128700,
+     "note": "Imported from Excel"
+    }
+   ],
+   "truckId": "t8",
+   "driverId": "d3",
+   "freight": 119000,
+   "ownerPayments": [
+    {
+     "id": "pay10o",
+     "date": "2026-09-20",
+     "amount": 118500,
+     "note": "Advance (imported)"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-09-20",
+   "deliveredOn": "2026-09-25",
+   "remarks": "Loaded on 20Sep night. Delivered on 25Sep",
+   "locations": []
+  },
+  {
+   "id": "lr11",
+   "company": "logistics",
+   "lrNo": 898,
+   "date": "2026-09-22",
+   "consignorId": "p19",
+   "consigneeId": "p20",
+   "from": "Anand",
+   "to": "Trissur",
+   "material": "Oil-8Mt",
+   "billTo": "consignee",
+   "billAmount": 72900,
+   "discount": 729,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "pay11r",
+     "date": "2026-09-30",
+     "amount": 72171,
+     "note": "Imported from Excel"
+    }
+   ],
+   "truckId": "t9",
+   "driverId": "d4",
+   "freight": 64000,
+   "ownerPayments": [
+    {
+     "id": "pay11o",
+     "date": "2026-09-22",
+     "amount": 62000,
+     "note": "Advance (imported)"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-09-22",
+   "deliveredOn": "2026-09-26",
+   "remarks": "Delivered on 26Sep",
+   "locations": []
+  },
+  {
+   "id": "lr12",
+   "company": "logistics",
+   "lrNo": 899,
+   "date": "2026-09-22",
+   "consignorId": "p21",
+   "consigneeId": "p8",
+   "from": "Ahmedabad",
+   "to": "Kannur",
+   "material": "Ss Utensils- 1.5Mt",
+   "billTo": "consignee",
+   "billAmount": 10500,
+   "discount": 0,
+   "payMode": "topay",
+   "receipts": [
+    {
+     "id": "pay12r",
+     "date": "2026-09-30",
+     "amount": 10500,
+     "note": "Imported from Excel"
+    }
+   ],
+   "truckId": "t10",
+   "driverId": null,
+   "freight": 12000,
+   "ownerPayments": [],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-09-22",
+   "deliveredOn": null,
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lr13",
+   "company": "logistics",
+   "lrNo": 900,
+   "date": "2026-09-25",
+   "consignorId": "p17",
+   "consigneeId": "p18",
+   "from": "Tirunelveli",
+   "to": "Morbi",
+   "material": "Activated Carbon- 28Mt",
+   "billTo": "consignee",
+   "billAmount": 130000,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [],
+   "truckId": "t11",
+   "driverId": "d5",
+   "freight": 118000,
+   "ownerPayments": [
+    {
+     "id": "pay13o",
+     "date": "2026-09-25",
+     "amount": 117500,
+     "note": "Advance (imported)"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-09-25",
+   "deliveredOn": "2026-10-01",
+   "remarks": "Loaded on 25Sep. Delivered on 01Oct",
+   "locations": []
+  },
+  {
+   "id": "lr14",
+   "company": "logistics",
+   "lrNo": 901,
+   "date": "2026-09-21",
+   "consignorId": "p22",
+   "consigneeId": "p23",
+   "from": "Rajkot",
+   "to": "Trissur",
+   "material": "Wpc Door Frame",
+   "billTo": "consignee",
+   "billAmount": 10000,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "pay14r",
+     "date": "2026-09-29",
+     "amount": 10000,
+     "note": "Imported from Excel"
+    }
+   ],
+   "truckId": "t12",
+   "driverId": null,
+   "freight": 8000,
+   "ownerPayments": [
+    {
+     "id": "pay14o",
+     "date": "2026-09-21",
+     "amount": 8000,
+     "note": "Advance (imported)"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-09-21",
+   "deliveredOn": null,
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lr15",
+   "company": "logistics",
+   "lrNo": 902,
+   "date": "2026-09-26",
+   "consignorId": "p24",
+   "consigneeId": "p25",
+   "from": "Padra",
+   "to": "Ernakulam",
+   "material": "Barrel-4Mt",
+   "billTo": "consignee",
+   "billAmount": 32000,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "pay15r",
+     "date": "2026-10-04",
+     "amount": 32000,
+     "note": "Imported from Excel"
+    }
+   ],
+   "truckId": "t13",
+   "driverId": null,
+   "freight": 79000,
+   "ownerPayments": [
+    {
+     "id": "pay15o",
+     "date": "2026-09-26",
+     "amount": 78000,
+     "note": "Advance (imported)"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-09-26",
+   "deliveredOn": null,
+   "remarks": "Received on Roadways A/c on 23Oct",
+   "locations": []
+  },
+  {
+   "id": "lr16",
+   "company": "logistics",
+   "lrNo": 903,
+   "date": "2026-09-26",
+   "consignorId": "p5",
+   "consigneeId": "p26",
+   "from": "Surat",
+   "to": "Kuttichira",
+   "material": "Pvc Sheets & Sections- 6.290Mt",
+   "billTo": "consignee",
+   "billAmount": 56600,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "pay16r",
+     "date": "2026-10-04",
+     "amount": 50000,
+     "note": "Imported from Excel"
+    }
+   ],
+   "truckId": "t13",
+   "driverId": null,
+   "freight": 0,
+   "ownerPayments": [],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-09-26",
+   "deliveredOn": null,
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lr17",
+   "company": "logistics",
+   "lrNo": 904,
+   "date": "2026-09-26",
+   "consignorId": "p27",
+   "consigneeId": "p28",
+   "from": "Ahmedabad",
+   "to": "Calicut",
+   "material": "Panel Saw, Edge Bander, Dust Collector",
+   "billTo": "consignee",
+   "billAmount": 65000,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "pay17r",
+     "date": "2026-10-04",
+     "amount": 60000,
+     "note": "Imported from Excel"
+    }
+   ],
+   "truckId": "t14",
+   "driverId": null,
+   "freight": 120000,
+   "ownerPayments": [
+    {
+     "id": "pay17o",
+     "date": "2026-09-26",
+     "amount": 119500,
+     "note": "Advance (imported)"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-09-26",
+   "deliveredOn": null,
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lr18",
+   "company": "logistics",
+   "lrNo": 905,
+   "date": "2026-09-26",
+   "consignorId": "p27",
+   "consigneeId": "p29",
+   "from": "Ahmedabad",
+   "to": "Calicut",
+   "material": "Panel Saw, Edge Bander, Dust Collector",
+   "billTo": "consignee",
+   "billAmount": 32500,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "pay18r",
+     "date": "2026-10-04",
+     "amount": 32500,
+     "note": "Imported from Excel"
+    }
+   ],
+   "truckId": "t14",
+   "driverId": null,
+   "freight": 0,
+   "ownerPayments": [],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-09-26",
+   "deliveredOn": null,
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lr19",
+   "company": "logistics",
+   "lrNo": 906,
+   "date": "2026-09-26",
+   "consignorId": "p27",
+   "consigneeId": "p30",
+   "from": "Ahmedabad",
+   "to": "Calicut",
+   "material": "Panel Saw, Edge Bander, Dust Collector",
+   "billTo": "consignee",
+   "billAmount": 32500,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "pay19r",
+     "date": "2026-10-04",
+     "amount": 32500,
+     "note": "Imported from Excel"
+    }
+   ],
+   "truckId": "t14",
+   "driverId": null,
+   "freight": 0,
+   "ownerPayments": [],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-09-26",
+   "deliveredOn": null,
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lr20",
+   "company": "logistics",
+   "lrNo": 909,
+   "date": "2026-09-30",
+   "consignorId": "p31",
+   "consigneeId": "p32",
+   "from": "Morbi",
+   "to": "Ernakulam",
+   "material": "Wpc- 7.5Mt",
+   "billTo": "consignee",
+   "billAmount": 75000,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "pay20r",
+     "date": "2026-10-08",
+     "amount": 50000,
+     "note": "Imported from Excel"
+    }
+   ],
+   "truckId": "t10",
+   "driverId": null,
+   "freight": 67500,
+   "ownerPayments": [
+    {
+     "id": "pay20o",
+     "date": "2026-09-30",
+     "amount": 67500,
+     "note": "Advance (imported)"
+    }
+   ],
+   "includedIn": null,
+   "status": "in_transit",
+   "loadedOn": "2026-09-30",
+   "deliveredOn": null,
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lr21",
+   "company": "logistics",
+   "lrNo": 910,
+   "date": "2026-09-28",
+   "consignorId": "p33",
+   "consigneeId": "p34",
+   "from": "Ahmedabad",
+   "to": "Tirur & Kannur",
+   "material": "Apple -12.410Mt",
+   "billTo": "consignee",
+   "billAmount": 20000,
+   "discount": 0,
+   "payMode": "topay",
+   "receipts": [
+    {
+     "id": "pay21r",
+     "date": "2026-10-06",
+     "amount": 20000,
+     "note": "Imported from Excel"
+    }
+   ],
+   "truckId": "t15",
+   "driverId": null,
+   "freight": 20000,
+   "ownerPayments": [],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-09-28",
+   "deliveredOn": null,
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lr22",
+   "company": "logistics",
+   "lrNo": 911,
+   "date": "2026-09-30",
+   "consignorId": "p31",
+   "consigneeId": "p35",
+   "from": "Morbi",
+   "to": "Trissur",
+   "material": "Wpc- 2.5Mt",
+   "billTo": "consignee",
+   "billAmount": 25000,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "pay22r",
+     "date": "2026-10-08",
+     "amount": 25000,
+     "note": "Imported from Excel"
+    }
+   ],
+   "truckId": "t10",
+   "driverId": null,
+   "freight": 22500,
+   "ownerPayments": [
+    {
+     "id": "pay22o",
+     "date": "2026-09-30",
+     "amount": 22500,
+     "note": "Advance (imported)"
+    }
+   ],
+   "includedIn": null,
+   "status": "in_transit",
+   "loadedOn": "2026-09-30",
+   "deliveredOn": null,
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lr23",
+   "company": "logistics",
+   "lrNo": 912,
+   "date": "2026-09-28",
+   "consignorId": "p1",
+   "consigneeId": "p2",
+   "from": "Ahmedabad",
+   "to": "Cochin",
+   "material": "Cold Press Machine",
+   "billTo": "consignee",
+   "billAmount": 40000,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "pay23r",
+     "date": "2026-10-06",
+     "amount": 40000,
+     "note": "Imported from Excel"
+    }
+   ],
+   "truckId": "t3",
+   "driverId": "d6",
+   "freight": 35000,
+   "ownerPayments": [
+    {
+     "id": "pay23o",
+     "date": "2026-09-28",
+     "amount": 35000,
+     "note": "Advance (imported)"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-09-28",
+   "deliveredOn": null,
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lr24",
+   "company": "logistics",
+   "lrNo": 913,
+   "date": "2026-09-26",
+   "consignorId": "p36",
+   "consigneeId": "p37",
+   "from": "Malappuram",
+   "to": "Bilimora",
+   "material": "Activated Carbon-5Mt",
+   "billTo": "consignee",
+   "billAmount": 42500,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [],
+   "truckId": "t16",
+   "driverId": null,
+   "freight": 30000,
+   "ownerPayments": [
+    {
+     "id": "pay24o",
+     "date": "2026-09-26",
+     "amount": 29500,
+     "note": "Advance (imported)"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-09-26",
+   "deliveredOn": null,
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lr25",
+   "company": "logistics",
+   "lrNo": 914,
+   "date": "2026-09-30",
+   "consignorId": "p38",
+   "consigneeId": "p39",
+   "from": "Morbi",
+   "to": "Malappuram",
+   "material": "Pvc Door Frame -4.8Mt",
+   "billTo": "consignee",
+   "billAmount": 50000,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "pay25r",
+     "date": "2026-10-08",
+     "amount": 50000,
+     "note": "Imported from Excel"
+    }
+   ],
+   "truckId": "t10",
+   "driverId": null,
+   "freight": 43000,
+   "ownerPayments": [
+    {
+     "id": "pay25o",
+     "date": "2026-09-30",
+     "amount": 40000,
+     "note": "Advance (imported)"
+    }
+   ],
+   "includedIn": null,
+   "status": "in_transit",
+   "loadedOn": "2026-09-30",
+   "deliveredOn": null,
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lr26",
+   "company": "roadways",
+   "lrNo": 3122,
+   "date": "2026-09-15",
+   "consignorId": "p40",
+   "consigneeId": "p41",
+   "from": "Vadodara",
+   "to": "Malappuram",
+   "material": "Geosil Art-4.93Mt",
+   "billTo": "consignee",
+   "billAmount": 41410,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "pay26r",
+     "date": "2026-09-23",
+     "amount": 41410,
+     "note": "Imported from Excel"
+    }
+   ],
+   "truckId": "t3",
+   "driverId": null,
+   "freight": 71000,
+   "ownerPayments": [
+    {
+     "id": "pay26o",
+     "date": "2026-09-15",
+     "amount": 69500,
+     "note": "Advance (imported)"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-09-15",
+   "deliveredOn": null,
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lr27",
+   "company": "roadways",
+   "lrNo": 3123,
+   "date": "2026-09-15",
+   "consignorId": "p42",
+   "consigneeId": "p43",
+   "from": "Morbi",
+   "to": "Alappuzha",
+   "material": "Pp Woven Fabric-6.316Mt",
+   "billTo": "consignee",
+   "billAmount": 145925,
+   "discount": 1460,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "pay27r",
+     "date": "2026-09-23",
+     "amount": 144465,
+     "note": "Imported from Excel"
+    }
+   ],
+   "truckId": "t17",
+   "driverId": null,
+   "freight": 135000,
+   "ownerPayments": [
+    {
+     "id": "pay27o",
+     "date": "2026-09-15",
+     "amount": 132500,
+     "note": "Advance (imported)"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-09-15",
+   "deliveredOn": null,
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lr28",
+   "company": "roadways",
+   "lrNo": 3124,
+   "date": "2026-09-15",
+   "consignorId": "p44",
+   "consigneeId": "p43",
+   "from": "Morbi",
+   "to": "Alappuzha",
+   "material": "Pp Woven Fabric-9.034Mt",
+   "billTo": "consignee",
+   "billAmount": 0,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [],
+   "truckId": "t17",
+   "driverId": null,
+   "freight": 0,
+   "ownerPayments": [],
+   "includedIn": 3123,
+   "status": "delivered",
+   "loadedOn": "2026-09-15",
+   "deliveredOn": null,
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lr29",
+   "company": "roadways",
+   "lrNo": 3125,
+   "date": "2026-09-15",
+   "consignorId": "p45",
+   "consigneeId": "p46",
+   "from": null,
+   "to": null,
+   "material": "",
+   "billTo": "consignee",
+   "billAmount": 34930,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "pay29r",
+     "date": "2026-09-23",
+     "amount": 34930,
+     "note": "Imported from Excel"
+    }
+   ],
+   "truckId": "t3",
+   "driverId": null,
+   "freight": 0,
+   "ownerPayments": [],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-09-15",
+   "deliveredOn": null,
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lr30",
+   "company": "roadways",
+   "lrNo": 3126,
+   "date": "2026-09-19",
+   "consignorId": "p47",
+   "consigneeId": "p48",
+   "from": "Dahej",
+   "to": "Cochin",
+   "material": "Boric Acid-9.2Mt",
+   "billTo": "consignee",
+   "billAmount": 83350,
+   "discount": 833,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "pay30r",
+     "date": "2026-09-27",
+     "amount": 82517,
+     "note": "Imported from Excel"
+    }
+   ],
+   "truckId": "t18",
+   "driverId": null,
+   "freight": 78000,
+   "ownerPayments": [
+    {
+     "id": "pay30o",
+     "date": "2026-09-19",
+     "amount": 75500,
+     "note": "Advance (imported)"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-09-19",
+   "deliveredOn": null,
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lr31",
+   "company": "roadways",
+   "lrNo": 3128,
+   "date": "2026-09-21",
+   "consignorId": "p49",
+   "consigneeId": "p50",
+   "from": "Vadodara",
+   "to": "Kannur",
+   "material": "Jug 20Ltr",
+   "billTo": "consignee",
+   "billAmount": 5000,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [],
+   "truckId": "t9",
+   "driverId": null,
+   "freight": 4000,
+   "ownerPayments": [],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-09-21",
+   "deliveredOn": null,
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lr32",
+   "company": "roadways",
+   "lrNo": 3129,
+   "date": "2026-09-24",
+   "consignorId": "p51",
+   "consigneeId": "p52",
+   "from": "Por, Vadodara",
+   "to": "Perumbavoor",
+   "material": "Loose Spares",
+   "billTo": "consignee",
+   "billAmount": 20100,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [],
+   "truckId": "t19",
+   "driverId": null,
+   "freight": 48750,
+   "ownerPayments": [
+    {
+     "id": "pay32o",
+     "date": "2026-09-24",
+     "amount": 48750,
+     "note": "Advance (imported)"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-09-24",
+   "deliveredOn": null,
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lr33",
+   "company": "roadways",
+   "lrNo": 3130,
+   "date": "2026-09-24",
+   "consignorId": "p53",
+   "consigneeId": "p52",
+   "from": "Por, Vadodara",
+   "to": "Mukkam",
+   "material": "Loose Spares",
+   "billTo": "consignee",
+   "billAmount": 32100,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [],
+   "truckId": "t19",
+   "driverId": null,
+   "freight": 0,
+   "ownerPayments": [],
+   "includedIn": 3129,
+   "status": "delivered",
+   "loadedOn": "2026-09-24",
+   "deliveredOn": null,
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lr34",
+   "company": "roadways",
+   "lrNo": 3131,
+   "date": "2026-09-24",
+   "consignorId": "p5",
+   "consigneeId": "p23",
+   "from": "Surat",
+   "to": "Trissur",
+   "material": "Pvc Section- 600Kg",
+   "billTo": "consignee",
+   "billAmount": 10100,
+   "discount": 1100,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "pay34r",
+     "date": "2026-10-02",
+     "amount": 9000,
+     "note": "Imported from Excel"
+    }
+   ],
+   "truckId": "t13",
+   "driverId": null,
+   "freight": 8000,
+   "ownerPayments": [
+    {
+     "id": "pay34o",
+     "date": "2026-09-24",
+     "amount": 7000,
+     "note": "Advance (imported)"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-09-24",
+   "deliveredOn": null,
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lr35",
+   "company": "roadways",
+   "lrNo": 3132,
+   "date": "2026-09-25",
+   "consignorId": "p54",
+   "consigneeId": "p55",
+   "from": "Anand",
+   "to": "Kota, Karnataka",
+   "material": "Wood",
+   "billTo": "consignee",
+   "billAmount": 33000,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "pay35r",
+     "date": "2026-10-03",
+     "amount": 33000,
+     "note": "Imported from Excel"
+    }
+   ],
+   "truckId": "t20",
+   "driverId": null,
+   "freight": 33000,
+   "ownerPayments": [
+    {
+     "id": "pay35o",
+     "date": "2026-09-25",
+     "amount": 33000,
+     "note": "Advance (imported)"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-09-25",
+   "deliveredOn": null,
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lr36",
+   "company": "roadways",
+   "lrNo": 3133,
+   "date": "2026-09-28",
+   "consignorId": "p56",
+   "consigneeId": "p57",
+   "from": "Vadodara",
+   "to": "Calicut",
+   "material": "Lacquer Coating Drums-11Mt",
+   "billTo": "consignee",
+   "billAmount": 89225,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "pay36r",
+     "date": "2026-10-06",
+     "amount": 89225,
+     "note": "Imported from Excel"
+    }
+   ],
+   "truckId": "t21",
+   "driverId": null,
+   "freight": 83000,
+   "ownerPayments": [
+    {
+     "id": "pay36o",
+     "date": "2026-09-28",
+     "amount": 79000,
+     "note": "Advance (imported)"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-09-28",
+   "deliveredOn": null,
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lr37",
+   "company": "roadways",
+   "lrNo": 3134,
+   "date": "2026-09-30",
+   "consignorId": "p58",
+   "consigneeId": "p59",
+   "from": "Vadodara",
+   "to": "Kondotty",
+   "material": "Corn Oil- 2.330Mt",
+   "billTo": "consignee",
+   "billAmount": 25000,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "pay37r",
+     "date": "2026-10-08",
+     "amount": 25000,
+     "note": "Imported from Excel"
+    }
+   ],
+   "truckId": "t3",
+   "driverId": null,
+   "freight": 48000,
+   "ownerPayments": [
+    {
+     "id": "pay37o",
+     "date": "2026-09-30",
+     "amount": 43000,
+     "note": "Advance (imported)"
+    }
+   ],
+   "includedIn": null,
+   "status": "in_transit",
+   "loadedOn": "2026-09-30",
+   "deliveredOn": null,
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lr38",
+   "company": "roadways",
+   "lrNo": 3135,
+   "date": "2026-09-30",
+   "consignorId": "p60",
+   "consigneeId": "p61",
+   "from": "Surat",
+   "to": "Kannur",
+   "material": "Silicon Paper",
+   "billTo": "consignee",
+   "billAmount": 21850,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "pay38r",
+     "date": "2026-10-08",
+     "amount": 21850,
+     "note": "Imported from Excel"
+    }
+   ],
+   "truckId": "t22",
+   "driverId": null,
+   "freight": 21850,
+   "ownerPayments": [
+    {
+     "id": "pay38o",
+     "date": "2026-09-30",
+     "amount": 21850,
+     "note": "Advance (imported)"
+    }
+   ],
+   "includedIn": null,
+   "status": "in_transit",
+   "loadedOn": "2026-09-30",
+   "deliveredOn": null,
+   "remarks": null,
+   "locations": []
+  }
+ ]
+}
