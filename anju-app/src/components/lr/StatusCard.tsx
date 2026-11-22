@@ -28,7 +28,7 @@ export function StatusCard({ lr }: { lr: Lr }) {
               key={s}
               className={cn(
                 "rounded-lg border p-2 text-center text-xs",
-                i <= at ? "border-emerald-300 bg-emerald-50 text-emerald-800 dark:border-emerald-800 dark:bg-emerald-950 dark:text-emerald-200" : "text-muted-foreground",
+                i <= at ? "border-primary/30 bg-accent text-accent-foreground" : "text-muted-foreground",
               )}
             >
               <span className="flex items-center justify-center gap-1 font-medium">

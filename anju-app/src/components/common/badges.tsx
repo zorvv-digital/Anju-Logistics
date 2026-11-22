@@ -5,14 +5,23 @@ import { COMPANY_LABEL, STATUS_LABEL, type Company, type LrStatus } from "@/lib/
 import { cn } from "@/lib/utils"
 
 const companyClass: Record<Company, string> = {
-  logistics: "bg-violet-100 text-violet-800 dark:bg-violet-950 dark:text-violet-200",
-  roadways: "bg-teal-100 text-teal-800 dark:bg-teal-950 dark:text-teal-200",
+  logistics: "bg-red-100 text-red-800 dark:bg-red-950 dark:text-red-200",
+  roadways: "bg-navy/10 text-navy dark:bg-navy/40 dark:text-blue-200",
 }
 
 export function CompanyBadge({ company, short }: { company: Company; short?: boolean }) {
   return (
     <Badge variant="secondary" className={companyClass[company]}>
       {short ? COMPANY_LABEL[company].replace("Anju ", "") : COMPANY_LABEL[company]}
+    </Badge>
+  )
+}
+
+/** "LR 1042" in the company's colour (red Logistics, navy Roadways). */
+export function LrBadge({ company, lrNo }: { company: Company; lrNo: number | string }) {
+  return (
+    <Badge variant="secondary" className={cn("tabular-nums", companyClass[company])}>
+      LR {lrNo}
     </Badge>
   )
 }
@@ -36,7 +45,10 @@ const payLabel = { none: "No bill", paid: "Paid", partial: "Part paid", unpaid: 
 export function PaymentBadge({ money }: { money: LrMoney }) {
   const s = paymentState(money)
   return (
-    <Badge variant={s === "unpaid" ? "destructive" : s === "paid" ? "secondary" : "outline"}>
+    <Badge
+      variant={s === "unpaid" ? "destructive" : s === "paid" ? "secondary" : "outline"}
+      className={cn(s === "paid" && "bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-200")}
+    >
       {payLabel[s]}
     </Badge>
   )

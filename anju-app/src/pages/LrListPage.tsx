@@ -1,10 +1,10 @@
-import { Plus, Search, SearchX } from "lucide-react"
+import { Search, SearchX } from "lucide-react"
 import { useMemo } from "react"
-import { Link, useSearchParams } from "react-router-dom"
+import { useSearchParams } from "react-router-dom"
 import { PageHeader } from "@/components/common/PageHeader"
 import { EmptyState } from "@/components/common/states"
 import { LrTable } from "@/components/lr/LrTable"
-import { Button, buttonVariants } from "@/components/ui/button"
+import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { lrMoney } from "@/lib/calc"
@@ -45,11 +45,6 @@ export function LrListPage() {
       <PageHeader
         title="Bookings"
         description={`${rows.length} of ${lrs.length} LRs`}
-        actions={
-          <Link to="/lr/new" className={buttonVariants()}>
-            <Plus /> New booking
-          </Link>
-        }
       />
       <div className="flex flex-wrap items-center gap-3">
         <div className="relative min-w-56 flex-1">
@@ -68,8 +63,7 @@ export function LrListPage() {
       {lrs.length === 0 ? (
         <EmptyState
           title="No bookings yet"
-          description="Create your first LR, or upload your Excel sheet."
-          action={<Link to="/lr/new" className={buttonVariants()}>New booking</Link>}
+          description="Create your first LR with New booking at the top."
         />
       ) : rows.length === 0 ? (
         <EmptyState

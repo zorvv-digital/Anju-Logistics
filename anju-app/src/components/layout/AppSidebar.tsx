@@ -1,4 +1,4 @@
-import { FileText, Home, LogOut, RotateCcw, Sheet, Truck } from "lucide-react"
+import { BarChart3, FileText, Home, LogOut, RotateCcw, Sheet, Truck } from "lucide-react"
 import { Link, useLocation } from "react-router-dom"
 import { toast } from "sonner"
 import {
@@ -11,6 +11,7 @@ const NAV = [
   { to: "/", label: "Home", icon: Home },
   { to: "/lr", label: "Bookings", icon: FileText },
   { to: "/owners", label: "Truck owners", icon: Truck },
+  { to: "/analytics", label: "Analytics", icon: BarChart3, ownerOnly: true },
   { to: "/sheet", label: "Sheet view", icon: Sheet },
 ]
 
@@ -27,19 +28,15 @@ export function AppSidebar() {
   return (
     <Sidebar>
       <SidebarHeader>
-        <div className="flex items-center gap-2 px-2 py-1">
-          <div className="flex size-8 items-center justify-center rounded-lg bg-primary text-primary-foreground font-bold">A</div>
-          <div className="leading-tight">
-            <p className="font-semibold">Anju</p>
-            <p className="text-xs text-muted-foreground">Logistics · Roadways</p>
-          </div>
-        </div>
+        <Link to="/" onClick={() => setOpenMobile(false)} className="block px-2 py-2">
+          <img src="/logo.png" alt="Anju Logistics" className="h-auto w-full" />
+        </Link>
       </SidebarHeader>
       <SidebarContent>
         <SidebarGroup>
           <SidebarGroupContent>
             <SidebarMenu>
-              {NAV.map(({ to, label, icon: Icon }) => (
+              {NAV.filter((n) => !n.ownerOnly || role === "owner").map(({ to, label, icon: Icon }) => (
                 <SidebarMenuItem key={to}>
                   <SidebarMenuButton isActive={active(to)} render={<Link to={to} onClick={() => setOpenMobile(false)} />}>
                     <Icon />

@@ -22,7 +22,7 @@ export function AppShell() {
     <SidebarProvider>
       <AppSidebar />
       <SidebarInset>
-        <header className="sticky top-0 z-10 flex h-14 items-center gap-2 border-b bg-background/95 px-4 backdrop-blur print:hidden">
+        <header className="sticky top-0 z-10 flex h-14 items-center gap-2 border-t-[3px] border-b border-t-primary bg-background/95 px-4 backdrop-blur print:hidden">
           <SidebarTrigger />
           <Separator orientation="vertical" className="h-5" />
           <CompanySwitch />

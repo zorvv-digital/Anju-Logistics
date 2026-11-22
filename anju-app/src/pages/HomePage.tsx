@@ -36,9 +36,9 @@ export function HomePage() {
             const ct = totals(byCompany(lrs, c))
             if (!ct.count) return null
             return (
-              <Card key={c}>
+              <Card key={c} className={c === "roadways" ? "border-t-4 border-t-navy" : "border-t-4 border-t-primary"}>
                 <CardHeader>
-                  <CardTitle>{COMPANY_LABEL[c]}</CardTitle>
+                  <CardTitle className={c === "roadways" ? "text-navy" : "text-primary"}>{COMPANY_LABEL[c]}</CardTitle>
                 </CardHeader>
                 <CardContent className="grid grid-cols-3 gap-2 text-sm">
                   <div><p className="text-muted-foreground">Billed</p><p className="font-medium">{money(ct.bill)}</p></div>

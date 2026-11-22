@@ -37,7 +37,7 @@ export function LrDetailPage() {
   const truck = look.truck(lr.truckId)
   const owner = look.owner(truck?.ownerId ?? null)
   const driver = look.driver(lr.driverId)
-  const topay = lr.payMode === "topay" ? "Receiver pays the driver directly on delivery." : null
+  const topay = lr.payMode === "topay" ? "Consignee pays the driver directly on delivery." : null
 
   const share = async () => {
     const msg = `Anju Logistics · LR ${lr.lrNo}\n${lr.from} → ${lr.to}\nTruck ${truck?.number ?? "-"}\nAmount ${money(m.bill)}`
@@ -75,6 +75,7 @@ export function LrDetailPage() {
           <CardHeader><CardTitle>Details</CardTitle></CardHeader>
           <CardContent className="divide-y">
             <Row label="Date" value={date(lr.date)} />
+            <Row label="Invoice No" value={lr.lrNo} />
             <Row label="Route" value={`${lr.from} → ${lr.to}`} />
             <Row label="Material" value={text(lr.material)} />
             <Row label="Truck" value={truck?.number ?? "Not assigned"} />

@@ -1,4 +1,5 @@
 import type { LucideIcon } from "lucide-react"
+import type { ReactNode } from "react"
 import { Card, CardContent } from "@/components/ui/card"
 import { cn } from "@/lib/utils"
 
@@ -7,7 +8,7 @@ interface Props {
   value: string
   icon: LucideIcon
   tone?: "default" | "good" | "bad"
-  hint?: string
+  hint?: ReactNode
 }
 
 const toneClass = { default: "", good: "text-emerald-600 dark:text-emerald-400", bad: "text-red-600 dark:text-red-400" }

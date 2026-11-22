@@ -1,6 +1,6 @@
 // Run: npx tsx src/lib/calc.check.ts
 import assert from "node:assert/strict"
-import { lrMoney, ownerDues, totals } from "./calc"
+import { allocateOwnerPayment, lrMoney, ownerDues, totals } from "./calc"
 import type { Lr } from "./types"
 
 const base: Lr = {
@@ -29,5 +29,13 @@ assert.equal(t.onRoad, 2)
 
 const dues = ownerDues([base, { ...base, id: "y", company: "roadways" }], () => "o1")
 assert.equal(dues.get("o1")?.due, 4000)
+assert.equal(dues.get("o1")?.freight, 170000)
+assert.equal(dues.get("o1")?.paid, 166000)
+
+// Part payment to an owner clears the oldest trip first
+const older = { ...base, id: "old", date: "2026-09-01", ownerPayments: [] }
+const newer = { ...base, id: "new", date: "2026-09-20", ownerPayments: [] }
+const split = allocateOwnerPayment([newer, older], 100000)
+assert.deepEqual(split.map((s) => [s.lr.id, s.amount]), [["old", 85000], ["new", 15000]])
 
 console.log("calc checks passed")

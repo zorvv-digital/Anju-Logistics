@@ -16,7 +16,7 @@ export function LrTable({ lrs }: { lrs: Lr[] }) {
         <TableHeader>
           <TableRow>
             <TableHead>LR</TableHead>
-            <TableHead>Bill to</TableHead>
+            <TableHead>Billing party</TableHead>
             <TableHead className="hidden md:table-cell">Route</TableHead>
             <TableHead className="hidden lg:table-cell">Truck</TableHead>
             <TableHead className="text-right">Bill</TableHead>

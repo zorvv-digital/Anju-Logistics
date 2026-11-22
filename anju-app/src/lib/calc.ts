@@ -56,19 +56,43 @@ export function nextLrNo(lrs: Lr[], company: Company) {
   return nums.length ? Math.max(...nums) + 1 : company === "logistics" ? 1 : 3001
 }
 
-/** Balance per truck owner across BOTH companies (client wants one amount per owner). */
+/**
+ * Balance per truck owner across BOTH companies (client wants one amount per owner).
+ * Freight and paid cover the same open trips, so freight − paid = due.
+ */
 export function ownerDues(lrs: Lr[], ownerOf: (truckId: string | null) => string | null) {
-  const map = new Map<string, { lrs: Lr[]; due: number }>()
+  const map = new Map<string, { lrs: Lr[]; freight: number; paid: number; due: number }>()
   for (const lr of lrs) {
     const ownerId = ownerOf(lr.truckId)
-    const due = lrMoney(lr).toPayOwner
-    if (!ownerId || due <= 0) continue
-    const row = map.get(ownerId) ?? { lrs: [], due: 0 }
+    const m = lrMoney(lr)
+    if (!ownerId || m.toPayOwner <= 0) continue
+    const row = map.get(ownerId) ?? { lrs: [], freight: 0, paid: 0, due: 0 }
     row.lrs.push(lr)
-    row.due += due
+    row.freight += m.freight
+    row.paid += m.ownerPaid
+    row.due += m.toPayOwner
     map.set(ownerId, row)
   }
   return map
+}
+
+/**
+ * Split one owner payment across trips, oldest first. Each trip is cleared before the next
+ * gets anything, so a part payment leaves the newest trips open.
+ */
+export function allocateOwnerPayment(lrs: Lr[], amount: number) {
+  const out: { lr: Lr; amount: number; due: number }[] = []
+  let left = amount
+  const oldestFirst = [...lrs].sort((a, b) => a.date.localeCompare(b.date) || a.lrNo - b.lrNo)
+  for (const lr of oldestFirst) {
+    if (left <= 0) break
+    const due = lrMoney(lr).toPayOwner
+    if (due <= 0) continue
+    const pay = Math.min(due, left)
+    out.push({ lr, amount: pay, due })
+    left = Math.round((left - pay) * 100) / 100
+  }
+  return out
 }
 
 export const paymentState = (m: LrMoney) => (m.bill === 0 ? "none" : m.toCollect === 0 ? "paid" : m.received > 0 ? "partial" : "unpaid")
