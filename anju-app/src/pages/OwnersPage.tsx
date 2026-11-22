@@ -77,7 +77,7 @@ export function OwnersPage() {
               action={<Button variant="outline" onClick={() => setQ("")}>Clear search</Button>}
             />
           ) : (
-            <div className="grid items-start gap-4 lg:grid-cols-2">
+            <div className="grid items-start gap-4">
               {shown.map((d) => (
                 <OwnerCard key={d.owner?.id ?? "unknown"} due={d} onPay={() => setPaying(d)} />
               ))}

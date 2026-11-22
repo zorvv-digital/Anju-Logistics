@@ -686,6 +686,46 @@
    "id": "d6",
    "name": "Latheesh",
    "phone": null
+  },
+  {
+   "id": "dd1",
+   "name": "Shaji",
+   "phone": "9846000000"
+  },
+  {
+   "id": "dd2",
+   "name": "Biju",
+   "phone": "9846001371"
+  },
+  {
+   "id": "dd3",
+   "name": "Rajeev",
+   "phone": "9846002742"
+  },
+  {
+   "id": "dd4",
+   "name": "Anwar",
+   "phone": "9846004113"
+  },
+  {
+   "id": "dd5",
+   "name": "Suresh",
+   "phone": "9846005484"
+  },
+  {
+   "id": "dd6",
+   "name": "Faisal",
+   "phone": "9846006855"
+  },
+  {
+   "id": "dd7",
+   "name": "Manoj",
+   "phone": "9846008226"
+  },
+  {
+   "id": "dd8",
+   "name": "Jithin",
+   "phone": "9846009597"
   }
  ],
  "places": [
@@ -1531,9 +1571,9 @@
     }
    ],
    "includedIn": null,
-   "status": "in_transit",
+   "status": "delivered",
    "loadedOn": "2026-09-30",
-   "deliveredOn": null,
+   "deliveredOn": "2026-10-05",
    "remarks": null,
    "locations": []
   },
@@ -1604,9 +1644,9 @@
     }
    ],
    "includedIn": null,
-   "status": "in_transit",
+   "status": "delivered",
    "loadedOn": "2026-09-30",
-   "deliveredOn": null,
+   "deliveredOn": "2026-10-05",
    "remarks": null,
    "locations": []
   },
@@ -1717,9 +1757,9 @@
     }
    ],
    "includedIn": null,
-   "status": "in_transit",
+   "status": "delivered",
    "loadedOn": "2026-09-30",
-   "deliveredOn": null,
+   "deliveredOn": "2026-10-05",
    "remarks": null,
    "locations": []
   },
@@ -2141,9 +2181,9 @@
     }
    ],
    "includedIn": null,
-   "status": "in_transit",
+   "status": "delivered",
    "loadedOn": "2026-09-30",
-   "deliveredOn": null,
+   "deliveredOn": "2026-10-05",
    "remarks": null,
    "locations": []
   },
@@ -2181,11 +2221,2557 @@
     }
    ],
    "includedIn": null,
-   "status": "in_transit",
+   "status": "delivered",
    "loadedOn": "2026-09-30",
-   "deliveredOn": null,
+   "deliveredOn": "2026-10-05",
    "remarks": null,
    "locations": []
+  },
+  {
+   "id": "lrd1",
+   "company": "logistics",
+   "lrNo": 915,
+   "date": "2026-10-01",
+   "consignorId": "p42",
+   "consigneeId": "p50",
+   "from": "Ahmedabad",
+   "to": "Cochin",
+   "material": "Edge Bander",
+   "billTo": "consignee",
+   "billAmount": 81500,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [],
+   "truckId": "t18",
+   "driverId": "d4",
+   "freight": 73000,
+   "ownerPayments": [
+    {
+     "id": "payd1o1",
+     "date": "2026-10-01",
+     "amount": 71000,
+     "note": "Advance"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-10-01",
+   "deliveredOn": "2026-10-07",
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lrd2",
+   "company": "roadways",
+   "lrNo": 3136,
+   "date": "2026-10-01",
+   "consignorId": "p24",
+   "consigneeId": "p43",
+   "from": "Ahmedabad",
+   "to": "Calicut",
+   "material": "Panel Saw, Edge Bander, Dust Collector",
+   "billTo": "consignee",
+   "billAmount": 110500,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "payd2r1",
+     "date": "2026-10-22",
+     "amount": 110500,
+     "note": "Receipt"
+    }
+   ],
+   "truckId": "t16",
+   "driverId": "dd2",
+   "freight": 102500,
+   "ownerPayments": [
+    {
+     "id": "payd2o1",
+     "date": "2026-10-01",
+     "amount": 100500,
+     "note": "Advance"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-10-01",
+   "deliveredOn": "2026-10-05",
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lrd3",
+   "company": "roadways",
+   "lrNo": 3137,
+   "date": "2026-10-02",
+   "consignorId": "p31",
+   "consigneeId": "p26",
+   "from": "Ahmedabad",
+   "to": "Cochin",
+   "material": "Cold Press Machine",
+   "billTo": "consignee",
+   "billAmount": 26000,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "payd3r1",
+     "date": "2026-10-12",
+     "amount": 26000,
+     "note": "Receipt"
+    }
+   ],
+   "truckId": "t16",
+   "driverId": "dd3",
+   "freight": 24000,
+   "ownerPayments": [
+    {
+     "id": "payd3o1",
+     "date": "2026-10-02",
+     "amount": 23000,
+     "note": "Advance"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-10-02",
+   "deliveredOn": "2026-10-07",
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lrd4",
+   "company": "logistics",
+   "lrNo": 916,
+   "date": "2026-10-03",
+   "consignorId": "p5",
+   "consigneeId": "p2",
+   "from": "Tirunelveli",
+   "to": "Morbi",
+   "material": "Activated Carbon- 28Mt",
+   "billTo": "consignee",
+   "billAmount": 94000,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "payd4r1",
+     "date": "2026-10-14",
+     "amount": 94000,
+     "note": "Receipt"
+    }
+   ],
+   "truckId": "t5",
+   "driverId": "dd3",
+   "freight": 82500,
+   "ownerPayments": [
+    {
+     "id": "payd4o1",
+     "date": "2026-10-03",
+     "amount": 82000,
+     "note": "Advance"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-10-03",
+   "deliveredOn": "2026-10-08",
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lrd5",
+   "company": "logistics",
+   "lrNo": 917,
+   "date": "2026-10-05",
+   "consignorId": "p44",
+   "consigneeId": "p52",
+   "from": "Por, Vadodara",
+   "to": "Mukkam",
+   "material": "Loose Spares",
+   "billTo": "consignee",
+   "billAmount": 16000,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "payd5r1",
+     "date": "2026-10-30",
+     "amount": 16000,
+     "note": "Receipt"
+    }
+   ],
+   "truckId": "t4",
+   "driverId": "dd5",
+   "freight": 14500,
+   "ownerPayments": [
+    {
+     "id": "payd5o1",
+     "date": "2026-10-05",
+     "amount": 14000,
+     "note": "Advance"
+    },
+    {
+     "id": "payd5o2",
+     "date": "2026-10-13",
+     "amount": 500,
+     "note": "Balance"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-10-05",
+   "deliveredOn": "2026-10-09",
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lrd6",
+   "company": "logistics",
+   "lrNo": 918,
+   "date": "2026-10-06",
+   "consignorId": "p53",
+   "consigneeId": "p48",
+   "from": "Por, Vadodara",
+   "to": "Perumbavoor",
+   "material": "Loose Spares",
+   "billTo": "consignee",
+   "billAmount": 17500,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "payd6r1",
+     "date": "2026-10-13",
+     "amount": 17500,
+     "note": "Receipt"
+    }
+   ],
+   "truckId": "t19",
+   "driverId": "dd4",
+   "freight": 16000,
+   "ownerPayments": [
+    {
+     "id": "payd6o1",
+     "date": "2026-10-06",
+     "amount": 15500,
+     "note": "Advance"
+    },
+    {
+     "id": "payd6o2",
+     "date": "2026-10-14",
+     "amount": 500,
+     "note": "Balance"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-10-06",
+   "deliveredOn": "2026-10-12",
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lrd7",
+   "company": "logistics",
+   "lrNo": 919,
+   "date": "2026-10-07",
+   "consignorId": "p1",
+   "consigneeId": "p18",
+   "from": "Ahmedabad",
+   "to": "Kodakara",
+   "material": "Wpcs Door Frame-7.970Mt",
+   "billTo": "consignee",
+   "billAmount": 122000,
+   "discount": 1220,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "payd7r1",
+     "date": "2026-10-18",
+     "amount": 120780,
+     "note": "Receipt"
+    }
+   ],
+   "truckId": "t1",
+   "driverId": "dd5",
+   "freight": 105000,
+   "ownerPayments": [
+    {
+     "id": "payd7o1",
+     "date": "2026-10-07",
+     "amount": 103000,
+     "note": "Advance"
+    },
+    {
+     "id": "payd7o2",
+     "date": "2026-10-16",
+     "amount": 2000,
+     "note": "Balance"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-10-07",
+   "deliveredOn": "2026-10-11",
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lrd8",
+   "company": "roadways",
+   "lrNo": 3138,
+   "date": "2026-10-07",
+   "consignorId": "p45",
+   "consigneeId": "p11",
+   "from": "Vadodara",
+   "to": "Ernakulam",
+   "material": "Fishing Net- 12Mt",
+   "billTo": "consignee",
+   "billAmount": 131500,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "payd8r1",
+     "date": "2026-10-29",
+     "amount": 131500,
+     "note": "Receipt"
+    }
+   ],
+   "truckId": "t5",
+   "driverId": "dd5",
+   "freight": 109500,
+   "ownerPayments": [
+    {
+     "id": "payd8o1",
+     "date": "2026-10-07",
+     "amount": 109000,
+     "note": "Advance"
+    },
+    {
+     "id": "payd8o2",
+     "date": "2026-10-15",
+     "amount": 500,
+     "note": "Balance"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-10-07",
+   "deliveredOn": "2026-10-12",
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lrd9",
+   "company": "logistics",
+   "lrNo": 920,
+   "date": "2026-10-09",
+   "consignorId": "p40",
+   "consigneeId": "p55",
+   "from": "Ahmedabad",
+   "to": "Kanjhangad",
+   "material": "Ss Utensils-355Kg",
+   "billTo": "consignee",
+   "billAmount": 23000,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "payd9r1",
+     "date": "2026-10-21",
+     "amount": 23000,
+     "note": "Receipt"
+    }
+   ],
+   "truckId": "t21",
+   "driverId": "d5",
+   "freight": 19500,
+   "ownerPayments": [
+    {
+     "id": "payd9o1",
+     "date": "2026-10-09",
+     "amount": 17500,
+     "note": "Advance"
+    },
+    {
+     "id": "payd9o2",
+     "date": "2026-10-17",
+     "amount": 2000,
+     "note": "Balance"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-10-09",
+   "deliveredOn": "2026-10-15",
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lrd10",
+   "company": "roadways",
+   "lrNo": 3139,
+   "date": "2026-10-09",
+   "consignorId": "p40",
+   "consigneeId": "p37",
+   "from": "Ahmedabad",
+   "to": "Kodakara",
+   "material": "Wpcs Door Frame-7.970Mt",
+   "billTo": "consignee",
+   "billAmount": 55500,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "payd10r1",
+     "date": "2026-11-02",
+     "amount": 55500,
+     "note": "Receipt"
+    }
+   ],
+   "truckId": "t7",
+   "driverId": "dd8",
+   "freight": 49500,
+   "ownerPayments": [
+    {
+     "id": "payd10o1",
+     "date": "2026-10-09",
+     "amount": 47500,
+     "note": "Advance"
+    },
+    {
+     "id": "payd10o2",
+     "date": "2026-10-19",
+     "amount": 2000,
+     "note": "Balance"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-10-09",
+   "deliveredOn": "2026-10-13",
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lrd11",
+   "company": "logistics",
+   "lrNo": 921,
+   "date": "2026-10-10",
+   "consignorId": "p5",
+   "consigneeId": "p39",
+   "from": "Morbi",
+   "to": "Alappuzha",
+   "material": "Pp Woven Fabric-9.034Mt",
+   "billTo": "consignee",
+   "billAmount": 74500,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "payd11r1",
+     "date": "2026-10-27",
+     "amount": 74500,
+     "note": "Receipt"
+    }
+   ],
+   "truckId": "t7",
+   "driverId": "d3",
+   "freight": 66500,
+   "ownerPayments": [
+    {
+     "id": "payd11o1",
+     "date": "2026-10-10",
+     "amount": 63500,
+     "note": "Advance"
+    },
+    {
+     "id": "payd11o2",
+     "date": "2026-10-16",
+     "amount": 3000,
+     "note": "Balance"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-10-10",
+   "deliveredOn": "2026-10-14",
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lrd12",
+   "company": "roadways",
+   "lrNo": 3140,
+   "date": "2026-10-12",
+   "consignorId": "p60",
+   "consigneeId": "p20",
+   "from": "Vadodara",
+   "to": "Kannur",
+   "material": "Jug 20Ltr",
+   "billTo": "consignee",
+   "billAmount": 101500,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "payd12r1",
+     "date": "2026-10-31",
+     "amount": 101500,
+     "note": "Receipt"
+    }
+   ],
+   "truckId": "t4",
+   "driverId": "d4",
+   "freight": 92500,
+   "ownerPayments": [
+    {
+     "id": "payd12o1",
+     "date": "2026-10-12",
+     "amount": 92000,
+     "note": "Advance"
+    },
+    {
+     "id": "payd12o2",
+     "date": "2026-10-21",
+     "amount": 500,
+     "note": "Balance"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-10-12",
+   "deliveredOn": "2026-10-16",
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lrd13",
+   "company": "logistics",
+   "lrNo": 922,
+   "date": "2026-10-12",
+   "consignorId": "p40",
+   "consigneeId": "p23",
+   "from": "Tirunelveli",
+   "to": "Morbi",
+   "material": "Activated Carbon- 28Mt",
+   "billTo": "consignee",
+   "billAmount": 90500,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "payd13r1",
+     "date": "2026-10-22",
+     "amount": 42500,
+     "note": "Part payment"
+    }
+   ],
+   "truckId": "t17",
+   "driverId": "dd5",
+   "freight": 83000,
+   "ownerPayments": [
+    {
+     "id": "payd13o1",
+     "date": "2026-10-12",
+     "amount": 81000,
+     "note": "Advance"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-10-12",
+   "deliveredOn": "2026-10-16",
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lrd14",
+   "company": "logistics",
+   "lrNo": 923,
+   "date": "2026-10-13",
+   "consignorId": "p56",
+   "consigneeId": "p25",
+   "from": "Surat",
+   "to": "Mannarkadu",
+   "material": "Pvc Sheets & Sections- 2Mt",
+   "billTo": "consignee",
+   "billAmount": 41000,
+   "discount": 410,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "payd14r1",
+     "date": "2026-10-26",
+     "amount": 40590,
+     "note": "Receipt"
+    }
+   ],
+   "truckId": "t13",
+   "driverId": "dd4",
+   "freight": 34000,
+   "ownerPayments": [
+    {
+     "id": "payd14o1",
+     "date": "2026-10-13",
+     "amount": 32000,
+     "note": "Advance"
+    },
+    {
+     "id": "payd14o2",
+     "date": "2026-10-21",
+     "amount": 2000,
+     "note": "Balance"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-10-13",
+   "deliveredOn": "2026-10-18",
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lrd15",
+   "company": "roadways",
+   "lrNo": 3141,
+   "date": "2026-10-14",
+   "consignorId": "p22",
+   "consigneeId": "p50",
+   "from": "Vadodara",
+   "to": "Calicut",
+   "material": "Lacquer Coating Drums-11Mt",
+   "billTo": "consignee",
+   "billAmount": 60500,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "payd15r1",
+     "date": "2026-10-25",
+     "amount": 60500,
+     "note": "Receipt"
+    }
+   ],
+   "truckId": "t17",
+   "driverId": "dd8",
+   "freight": 56500,
+   "ownerPayments": [
+    {
+     "id": "payd15o1",
+     "date": "2026-10-14",
+     "amount": 53500,
+     "note": "Advance"
+    },
+    {
+     "id": "payd15o2",
+     "date": "2026-10-24",
+     "amount": 3000,
+     "note": "Balance"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-10-14",
+   "deliveredOn": "2026-10-18",
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lrd16",
+   "company": "logistics",
+   "lrNo": 924,
+   "date": "2026-10-15",
+   "consignorId": "p5",
+   "consigneeId": "p34",
+   "from": "Morbi",
+   "to": "Trissur",
+   "material": "Wpc- 2.5Mt",
+   "billTo": "consignee",
+   "billAmount": 90500,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "payd16r1",
+     "date": "2026-11-03",
+     "amount": 90500,
+     "note": "Receipt"
+    }
+   ],
+   "truckId": "t1",
+   "driverId": "dd7",
+   "freight": 83500,
+   "ownerPayments": [
+    {
+     "id": "payd16o1",
+     "date": "2026-10-15",
+     "amount": 83000,
+     "note": "Advance"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-10-15",
+   "deliveredOn": "2026-10-20",
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lrd17",
+   "company": "roadways",
+   "lrNo": 3142,
+   "date": "2026-10-15",
+   "consignorId": "p3",
+   "consigneeId": "p23",
+   "from": "Morbi",
+   "to": "Ernakulam",
+   "material": "Wpc- 7.5Mt",
+   "billTo": "consignee",
+   "billAmount": 99500,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "payd17r1",
+     "date": "2026-11-05",
+     "amount": 99500,
+     "note": "Receipt"
+    }
+   ],
+   "truckId": "t19",
+   "driverId": "dd7",
+   "freight": 91000,
+   "ownerPayments": [
+    {
+     "id": "payd17o1",
+     "date": "2026-10-15",
+     "amount": 90500,
+     "note": "Advance"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-10-15",
+   "deliveredOn": "2026-10-21",
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lrd18",
+   "company": "logistics",
+   "lrNo": 925,
+   "date": "2026-10-16",
+   "consignorId": "p27",
+   "consigneeId": "p18",
+   "from": "Ahmedabad",
+   "to": "Calicut",
+   "material": "Panel Saw, Edge Bander, Dust Collector",
+   "billTo": "consignee",
+   "billAmount": 122500,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "payd18r1",
+     "date": "2026-10-27",
+     "amount": 122500,
+     "note": "Receipt"
+    }
+   ],
+   "truckId": "t4",
+   "driverId": "dd2",
+   "freight": 112500,
+   "ownerPayments": [
+    {
+     "id": "payd18o1",
+     "date": "2026-10-16",
+     "amount": 109500,
+     "note": "Advance"
+    },
+    {
+     "id": "payd18o2",
+     "date": "2026-10-28",
+     "amount": 3000,
+     "note": "Balance"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-10-16",
+   "deliveredOn": "2026-10-22",
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lrd19",
+   "company": "roadways",
+   "lrNo": 3143,
+   "date": "2026-10-16",
+   "consignorId": "p5",
+   "consigneeId": "p43",
+   "from": "Vadodara",
+   "to": "Kondotty",
+   "material": "Corn Oil- 2.330Mt",
+   "billTo": "consignee",
+   "billAmount": 79000,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "payd19r1",
+     "date": "2026-11-01",
+     "amount": 79000,
+     "note": "Receipt"
+    }
+   ],
+   "truckId": "t3",
+   "driverId": "dd6",
+   "freight": 69000,
+   "ownerPayments": [
+    {
+     "id": "payd19o1",
+     "date": "2026-10-16",
+     "amount": 66000,
+     "note": "Advance"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-10-16",
+   "deliveredOn": "2026-10-21",
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lrd20",
+   "company": "logistics",
+   "lrNo": 926,
+   "date": "2026-10-17",
+   "consignorId": "p13",
+   "consigneeId": "p29",
+   "from": "Vadodara",
+   "to": "Parappanangadi",
+   "material": "Fishing Net- 12Mt",
+   "billTo": "consignee",
+   "billAmount": 87500,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "payd20r1",
+     "date": "2026-11-06",
+     "amount": 87500,
+     "note": "Receipt"
+    }
+   ],
+   "truckId": "t3",
+   "driverId": "dd7",
+   "freight": 79500,
+   "ownerPayments": [
+    {
+     "id": "payd20o1",
+     "date": "2026-10-17",
+     "amount": 79000,
+     "note": "Advance"
+    },
+    {
+     "id": "payd20o2",
+     "date": "2026-10-26",
+     "amount": 500,
+     "note": "Balance"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-10-17",
+   "deliveredOn": "2026-10-23",
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lrd21",
+   "company": "roadways",
+   "lrNo": 3144,
+   "date": "2026-10-17",
+   "consignorId": "p21",
+   "consigneeId": "p9",
+   "from": "Surat",
+   "to": "Kannur",
+   "material": "Silicon Paper",
+   "billTo": "consignee",
+   "billAmount": 15500,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "payd21r1",
+     "date": "2026-10-24",
+     "amount": 15500,
+     "note": "Receipt"
+    }
+   ],
+   "truckId": "t18",
+   "driverId": "dd5",
+   "freight": 14000,
+   "ownerPayments": [
+    {
+     "id": "payd21o1",
+     "date": "2026-10-17",
+     "amount": 13500,
+     "note": "Advance"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-10-17",
+   "deliveredOn": "2026-10-22",
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lrd22",
+   "company": "roadways",
+   "lrNo": 3145,
+   "date": "2026-10-19",
+   "consignorId": "p10",
+   "consigneeId": "p20",
+   "from": "Anand",
+   "to": "Trissur",
+   "material": "Oil-8Mt",
+   "billTo": "consignee",
+   "billAmount": 117000,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "payd22r1",
+     "date": "2026-11-06",
+     "amount": 117000,
+     "note": "Receipt"
+    }
+   ],
+   "truckId": "t21",
+   "driverId": "dd1",
+   "freight": 96000,
+   "ownerPayments": [
+    {
+     "id": "payd22o1",
+     "date": "2026-10-19",
+     "amount": 94000,
+     "note": "Advance"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-10-19",
+   "deliveredOn": "2026-10-24",
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lrd23",
+   "company": "logistics",
+   "lrNo": 927,
+   "date": "2026-10-20",
+   "consignorId": "p10",
+   "consigneeId": "p14",
+   "from": "Ahmedabad",
+   "to": "Calicut",
+   "material": "Panel Saw, Edge Bander, Dust Collector",
+   "billTo": "consignee",
+   "billAmount": 21500,
+   "discount": 215,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "payd23r1",
+     "date": "2026-10-24",
+     "amount": 10000,
+     "note": "Part payment"
+    }
+   ],
+   "truckId": "t8",
+   "driverId": "dd1",
+   "freight": 18000,
+   "ownerPayments": [
+    {
+     "id": "payd23o1",
+     "date": "2026-10-20",
+     "amount": 15000,
+     "note": "Advance"
+    },
+    {
+     "id": "payd23o2",
+     "date": "2026-10-31",
+     "amount": 3000,
+     "note": "Balance"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-10-20",
+   "deliveredOn": "2026-10-26",
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lrd24",
+   "company": "roadways",
+   "lrNo": 3146,
+   "date": "2026-10-21",
+   "consignorId": "p36",
+   "consigneeId": "p50",
+   "from": "Ahmedabad",
+   "to": "Cochin",
+   "material": "Cold Press Machine",
+   "billTo": "consignee",
+   "billAmount": 85500,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "payd24r1",
+     "date": "2026-11-09",
+     "amount": 85500,
+     "note": "Receipt"
+    }
+   ],
+   "truckId": "t4",
+   "driverId": "dd5",
+   "freight": 71500,
+   "ownerPayments": [
+    {
+     "id": "payd24o1",
+     "date": "2026-10-21",
+     "amount": 70500,
+     "note": "Advance"
+    },
+    {
+     "id": "payd24o2",
+     "date": "2026-10-29",
+     "amount": 1000,
+     "note": "Balance"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-10-21",
+   "deliveredOn": "2026-10-27",
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lrd25",
+   "company": "logistics",
+   "lrNo": 928,
+   "date": "2026-10-21",
+   "consignorId": "p10",
+   "consigneeId": "p57",
+   "from": "Dahej",
+   "to": "Cochin",
+   "material": "Boric Acid-9.2Mt",
+   "billTo": "consignee",
+   "billAmount": 108000,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "payd25r1",
+     "date": "2026-10-31",
+     "amount": 108000,
+     "note": "Receipt"
+    }
+   ],
+   "truckId": "t9",
+   "driverId": "d4",
+   "freight": 92500,
+   "ownerPayments": [
+    {
+     "id": "payd25o1",
+     "date": "2026-10-21",
+     "amount": 91500,
+     "note": "Advance"
+    },
+    {
+     "id": "payd25o2",
+     "date": "2026-11-01",
+     "amount": 1000,
+     "note": "Balance"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-10-21",
+   "deliveredOn": "2026-10-25",
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lrd26",
+   "company": "logistics",
+   "lrNo": 929,
+   "date": "2026-10-22",
+   "consignorId": "p27",
+   "consigneeId": "p9",
+   "from": "Por, Vadodara",
+   "to": "Perumbavoor",
+   "material": "Loose Spares",
+   "billTo": "consignee",
+   "billAmount": 78000,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "payd26r1",
+     "date": "2026-11-15",
+     "amount": 78000,
+     "note": "Receipt"
+    }
+   ],
+   "truckId": "t1",
+   "driverId": "dd7",
+   "freight": 64000,
+   "ownerPayments": [
+    {
+     "id": "payd26o1",
+     "date": "2026-10-22",
+     "amount": 63000,
+     "note": "Advance"
+    },
+    {
+     "id": "payd26o2",
+     "date": "2026-11-01",
+     "amount": 1000,
+     "note": "Balance"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-10-22",
+   "deliveredOn": "2026-10-26",
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lrd27",
+   "company": "logistics",
+   "lrNo": 930,
+   "date": "2026-10-22",
+   "consignorId": "p38",
+   "consigneeId": "p4",
+   "from": "Vadodara",
+   "to": "Kannur",
+   "material": "Jug 20Ltr",
+   "billTo": "consignee",
+   "billAmount": 108500,
+   "discount": 1085,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "payd27r1",
+     "date": "2026-11-05",
+     "amount": 107415,
+     "note": "Receipt"
+    }
+   ],
+   "truckId": "t3",
+   "driverId": "d4",
+   "freight": 89000,
+   "ownerPayments": [
+    {
+     "id": "payd27o1",
+     "date": "2026-10-22",
+     "amount": 88000,
+     "note": "Advance"
+    },
+    {
+     "id": "payd27o2",
+     "date": "2026-10-29",
+     "amount": 1000,
+     "note": "Balance"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-10-22",
+   "deliveredOn": "2026-10-26",
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lrd28",
+   "company": "logistics",
+   "lrNo": 931,
+   "date": "2026-10-23",
+   "consignorId": "p42",
+   "consigneeId": "p4",
+   "from": "Ahmedabad",
+   "to": "Tirur & Kannur",
+   "material": "Apple -12.410Mt",
+   "billTo": "consignee",
+   "billAmount": 95500,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [],
+   "truckId": "t21",
+   "driverId": "dd3",
+   "freight": 81500,
+   "ownerPayments": [
+    {
+     "id": "payd28o1",
+     "date": "2026-10-23",
+     "amount": 79500,
+     "note": "Advance"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-10-23",
+   "deliveredOn": "2026-10-28",
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lrd29",
+   "company": "logistics",
+   "lrNo": 932,
+   "date": "2026-10-24",
+   "consignorId": "p51",
+   "consigneeId": "p30",
+   "from": "Surat",
+   "to": "Trissur",
+   "material": "Pvc Section- 600Kg",
+   "billTo": "consignee",
+   "billAmount": 64000,
+   "discount": 640,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "payd29r1",
+     "date": "2026-11-04",
+     "amount": 63360,
+     "note": "Receipt"
+    }
+   ],
+   "truckId": "t21",
+   "driverId": "d2",
+   "freight": 57000,
+   "ownerPayments": [
+    {
+     "id": "payd29o1",
+     "date": "2026-10-24",
+     "amount": 55000,
+     "note": "Advance"
+    },
+    {
+     "id": "payd29o2",
+     "date": "2026-11-04",
+     "amount": 2000,
+     "note": "Balance"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-10-24",
+   "deliveredOn": "2026-10-30",
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lrd30",
+   "company": "logistics",
+   "lrNo": 933,
+   "date": "2026-10-26",
+   "consignorId": "p38",
+   "consigneeId": "p43",
+   "from": "Surat",
+   "to": "Trissur",
+   "material": "Pvc Section- 600Kg",
+   "billTo": "consignee",
+   "billAmount": 112000,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "payd30r1",
+     "date": "2026-11-04",
+     "amount": 68500,
+     "note": "Part payment"
+    }
+   ],
+   "truckId": "t19",
+   "driverId": "dd7",
+   "freight": 94500,
+   "ownerPayments": [
+    {
+     "id": "payd30o1",
+     "date": "2026-10-26",
+     "amount": 93500,
+     "note": "Advance"
+    },
+    {
+     "id": "payd30o2",
+     "date": "2026-11-03",
+     "amount": 1000,
+     "note": "Balance"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-10-26",
+   "deliveredOn": "2026-11-01",
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lrd31",
+   "company": "logistics",
+   "lrNo": 934,
+   "date": "2026-10-27",
+   "consignorId": "p53",
+   "consigneeId": "p59",
+   "from": "Padra",
+   "to": "Ernakulam",
+   "material": "Barrel-4Mt",
+   "billTo": "consignee",
+   "billAmount": 14000,
+   "discount": 140,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "payd31r1",
+     "date": "2026-11-05",
+     "amount": 8000,
+     "note": "Part payment"
+    }
+   ],
+   "truckId": "t12",
+   "driverId": "d1",
+   "freight": 11500,
+   "ownerPayments": [
+    {
+     "id": "payd31o1",
+     "date": "2026-10-27",
+     "amount": 11000,
+     "note": "Advance"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-10-27",
+   "deliveredOn": "2026-11-02",
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lrd32",
+   "company": "roadways",
+   "lrNo": 3147,
+   "date": "2026-10-28",
+   "consignorId": "p17",
+   "consigneeId": "p18",
+   "from": "Ahmedabad",
+   "to": "Calicut",
+   "material": "Panel Saw, Edge Bander, Dust Collector",
+   "billTo": "consignee",
+   "billAmount": 36500,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [],
+   "truckId": "t1",
+   "driverId": "dd8",
+   "freight": 34000,
+   "ownerPayments": [
+    {
+     "id": "payd32o1",
+     "date": "2026-10-28",
+     "amount": 33500,
+     "note": "Advance"
+    },
+    {
+     "id": "payd32o2",
+     "date": "2026-11-05",
+     "amount": 500,
+     "note": "Balance"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-10-28",
+   "deliveredOn": "2026-11-01",
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lrd33",
+   "company": "logistics",
+   "lrNo": 935,
+   "date": "2026-10-28",
+   "consignorId": "p17",
+   "consigneeId": "p43",
+   "from": "Ahmedabad",
+   "to": "Tirur & Kannur",
+   "material": "Apple -12.410Mt",
+   "billTo": "consignee",
+   "billAmount": 81000,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "payd33r1",
+     "date": "2026-11-05",
+     "amount": 34500,
+     "note": "Part payment"
+    }
+   ],
+   "truckId": "t14",
+   "driverId": "d5",
+   "freight": 69500,
+   "ownerPayments": [
+    {
+     "id": "payd33o1",
+     "date": "2026-10-28",
+     "amount": 67500,
+     "note": "Advance"
+    },
+    {
+     "id": "payd33o2",
+     "date": "2026-11-07",
+     "amount": 2000,
+     "note": "Balance"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-10-28",
+   "deliveredOn": "2026-11-03",
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lrd34",
+   "company": "logistics",
+   "lrNo": 936,
+   "date": "2026-10-29",
+   "consignorId": "p58",
+   "consigneeId": "p32",
+   "from": "Rajkot",
+   "to": "Calicut",
+   "material": "Wpc Door Frame-7.33Mt",
+   "billTo": "consignee",
+   "billAmount": 85000,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "payd34r1",
+     "date": "2026-11-06",
+     "amount": 85000,
+     "note": "Receipt"
+    }
+   ],
+   "truckId": "t5",
+   "driverId": "dd5",
+   "freight": 70500,
+   "ownerPayments": [
+    {
+     "id": "payd34o1",
+     "date": "2026-10-29",
+     "amount": 68500,
+     "note": "Advance"
+    },
+    {
+     "id": "payd34o2",
+     "date": "2026-11-05",
+     "amount": 2000,
+     "note": "Balance"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-10-29",
+   "deliveredOn": "2026-11-04",
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lrd35",
+   "company": "roadways",
+   "lrNo": 3148,
+   "date": "2026-10-30",
+   "consignorId": "p15",
+   "consigneeId": "p43",
+   "from": "Surat",
+   "to": "Trissur",
+   "material": "Pvc Section- 600Kg",
+   "billTo": "consignee",
+   "billAmount": 52000,
+   "discount": 520,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "payd35r1",
+     "date": "2026-11-03",
+     "amount": 27000,
+     "note": "Part payment"
+    }
+   ],
+   "truckId": "t3",
+   "driverId": "d3",
+   "freight": 45000,
+   "ownerPayments": [
+    {
+     "id": "payd35o1",
+     "date": "2026-10-30",
+     "amount": 44500,
+     "note": "Advance"
+    },
+    {
+     "id": "payd35o2",
+     "date": "2026-11-10",
+     "amount": 500,
+     "note": "Balance"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-10-30",
+   "deliveredOn": "2026-11-05",
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lrd36",
+   "company": "logistics",
+   "lrNo": 937,
+   "date": "2026-10-31",
+   "consignorId": "p38",
+   "consigneeId": "p16",
+   "from": "Surat",
+   "to": "Trissur",
+   "material": "Pvc Section- 600Kg",
+   "billTo": "consignee",
+   "billAmount": 116500,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "payd36r1",
+     "date": "2026-11-12",
+     "amount": 116500,
+     "note": "Receipt"
+    }
+   ],
+   "truckId": "t21",
+   "driverId": "d1",
+   "freight": 99500,
+   "ownerPayments": [
+    {
+     "id": "payd36o1",
+     "date": "2026-10-31",
+     "amount": 97500,
+     "note": "Advance"
+    },
+    {
+     "id": "payd36o2",
+     "date": "2026-11-10",
+     "amount": 2000,
+     "note": "Balance"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-10-31",
+   "deliveredOn": "2026-11-05",
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lrd37",
+   "company": "roadways",
+   "lrNo": 3149,
+   "date": "2026-10-31",
+   "consignorId": "p27",
+   "consigneeId": "p48",
+   "from": "Surat",
+   "to": "Kannur",
+   "material": "Silicon Paper",
+   "billTo": "consignee",
+   "billAmount": 9500,
+   "discount": 95,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "payd37r1",
+     "date": "2026-11-03",
+     "amount": 6000,
+     "note": "Part payment"
+    }
+   ],
+   "truckId": "t2",
+   "driverId": "d4",
+   "freight": 9000,
+   "ownerPayments": [
+    {
+     "id": "payd37o1",
+     "date": "2026-10-31",
+     "amount": 6000,
+     "note": "Advance"
+    },
+    {
+     "id": "payd37o2",
+     "date": "2026-11-11",
+     "amount": 3000,
+     "note": "Balance"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-10-31",
+   "deliveredOn": "2026-11-04",
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lrd38",
+   "company": "logistics",
+   "lrNo": 938,
+   "date": "2026-11-02",
+   "consignorId": "p10",
+   "consigneeId": "p2",
+   "from": "Ahmedabad",
+   "to": "Calicut",
+   "material": "Panel Saw, Edge Bander, Dust Collector",
+   "billTo": "consignee",
+   "billAmount": 128000,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "payd38r1",
+     "date": "2026-11-22",
+     "amount": 128000,
+     "note": "Receipt"
+    }
+   ],
+   "truckId": "t12",
+   "driverId": "d4",
+   "freight": 107000,
+   "ownerPayments": [
+    {
+     "id": "payd38o1",
+     "date": "2026-11-02",
+     "amount": 105000,
+     "note": "Advance"
+    },
+    {
+     "id": "payd38o2",
+     "date": "2026-11-10",
+     "amount": 2000,
+     "note": "Balance"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-11-02",
+   "deliveredOn": "2026-11-07",
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lrd39",
+   "company": "roadways",
+   "lrNo": 3150,
+   "date": "2026-11-03",
+   "consignorId": "p58",
+   "consigneeId": "p35",
+   "from": "Ahmedabad",
+   "to": "Calicut",
+   "material": "Panel Saw, Edge Bander, Dust Collector",
+   "billTo": "consignee",
+   "billAmount": 70000,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "payd39r1",
+     "date": "2026-11-10",
+     "amount": 36500,
+     "note": "Part payment"
+    }
+   ],
+   "truckId": "t21",
+   "driverId": "dd8",
+   "freight": 61500,
+   "ownerPayments": [
+    {
+     "id": "payd39o1",
+     "date": "2026-11-03",
+     "amount": 59500,
+     "note": "Advance"
+    },
+    {
+     "id": "payd39o2",
+     "date": "2026-11-11",
+     "amount": 2000,
+     "note": "Balance"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-11-03",
+   "deliveredOn": "2026-11-08",
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lrd40",
+   "company": "logistics",
+   "lrNo": 939,
+   "date": "2026-11-04",
+   "consignorId": "p56",
+   "consigneeId": "p11",
+   "from": "Por, Vadodara",
+   "to": "Mukkam",
+   "material": "Loose Spares",
+   "billTo": "consignee",
+   "billAmount": 34000,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "payd40r1",
+     "date": "2026-11-12",
+     "amount": 12000,
+     "note": "Part payment"
+    }
+   ],
+   "truckId": "t4",
+   "driverId": "dd7",
+   "freight": 31000,
+   "ownerPayments": [
+    {
+     "id": "payd40o1",
+     "date": "2026-11-04",
+     "amount": 29000,
+     "note": "Advance"
+    },
+    {
+     "id": "payd40o2",
+     "date": "2026-11-15",
+     "amount": 2000,
+     "note": "Balance"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-11-04",
+   "deliveredOn": "2026-11-10",
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lrd41",
+   "company": "roadways",
+   "lrNo": 3151,
+   "date": "2026-11-05",
+   "consignorId": "p3",
+   "consigneeId": "p48",
+   "from": "Vadodara",
+   "to": "Calicut",
+   "material": "Lacquer Coating Drums-11Mt",
+   "billTo": "consignee",
+   "billAmount": 137000,
+   "discount": 1370,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "payd41r1",
+     "date": "2026-11-22",
+     "amount": 135630,
+     "note": "Receipt"
+    }
+   ],
+   "truckId": "t10",
+   "driverId": "dd6",
+   "freight": 124000,
+   "ownerPayments": [
+    {
+     "id": "payd41o1",
+     "date": "2026-11-05",
+     "amount": 121000,
+     "note": "Advance"
+    },
+    {
+     "id": "payd41o2",
+     "date": "2026-11-12",
+     "amount": 3000,
+     "note": "Balance"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-11-05",
+   "deliveredOn": "2026-11-10",
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lrd42",
+   "company": "roadways",
+   "lrNo": 3152,
+   "date": "2026-11-06",
+   "consignorId": "p15",
+   "consigneeId": "p30",
+   "from": "Padra",
+   "to": "Ernakulam",
+   "material": "Barrel-4Mt",
+   "billTo": "consignee",
+   "billAmount": 124500,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "payd42r1",
+     "date": "2026-11-14",
+     "amount": 77500,
+     "note": "Part payment"
+    }
+   ],
+   "truckId": "t5",
+   "driverId": "dd3",
+   "freight": 104500,
+   "ownerPayments": [
+    {
+     "id": "payd42o1",
+     "date": "2026-11-06",
+     "amount": 102500,
+     "note": "Advance"
+    },
+    {
+     "id": "payd42o2",
+     "date": "2026-11-16",
+     "amount": 2000,
+     "note": "Balance"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-11-06",
+   "deliveredOn": "2026-11-10",
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lrd43",
+   "company": "logistics",
+   "lrNo": 940,
+   "date": "2026-11-07",
+   "consignorId": "p38",
+   "consigneeId": "p23",
+   "from": "Dahej",
+   "to": "Cochin",
+   "material": "Boric Acid-9.2Mt",
+   "billTo": "consignee",
+   "billAmount": 78000,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [],
+   "truckId": "t10",
+   "driverId": "dd7",
+   "freight": 68500,
+   "ownerPayments": [
+    {
+     "id": "payd43o1",
+     "date": "2026-11-07",
+     "amount": 68000,
+     "note": "Advance"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-11-07",
+   "deliveredOn": "2026-11-12",
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lrd44",
+   "company": "roadways",
+   "lrNo": 3153,
+   "date": "2026-11-09",
+   "consignorId": "p36",
+   "consigneeId": "p59",
+   "from": "Ahmedabad",
+   "to": "Kanjhangad",
+   "material": "Ss Utensils-355Kg",
+   "billTo": "consignee",
+   "billAmount": 41000,
+   "discount": 410,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "payd44r1",
+     "date": "2026-11-22",
+     "amount": 40590,
+     "note": "Receipt"
+    }
+   ],
+   "truckId": "t1",
+   "driverId": "dd8",
+   "freight": 34000,
+   "ownerPayments": [
+    {
+     "id": "payd44o1",
+     "date": "2026-11-09",
+     "amount": 33000,
+     "note": "Advance"
+    },
+    {
+     "id": "payd44o2",
+     "date": "2026-11-18",
+     "amount": 1000,
+     "note": "Balance"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-11-09",
+   "deliveredOn": "2026-11-13",
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lrd45",
+   "company": "logistics",
+   "lrNo": 941,
+   "date": "2026-11-09",
+   "consignorId": "p31",
+   "consigneeId": "p57",
+   "from": "Anand",
+   "to": "Trissur",
+   "material": "Oil-8Mt",
+   "billTo": "consignee",
+   "billAmount": 12500,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "payd45r1",
+     "date": "2026-11-17",
+     "amount": 8000,
+     "note": "Part payment"
+    }
+   ],
+   "truckId": "t11",
+   "driverId": "d1",
+   "freight": 11500,
+   "ownerPayments": [
+    {
+     "id": "payd45o1",
+     "date": "2026-11-09",
+     "amount": 9500,
+     "note": "Advance"
+    },
+    {
+     "id": "payd45o2",
+     "date": "2026-11-17",
+     "amount": 2000,
+     "note": "Balance"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-11-09",
+   "deliveredOn": "2026-11-15",
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lrd46",
+   "company": "roadways",
+   "lrNo": 3154,
+   "date": "2026-11-10",
+   "consignorId": "p31",
+   "consigneeId": "p6",
+   "from": "Vadodara",
+   "to": "Kondotty",
+   "material": "Corn Oil- 2.330Mt",
+   "billTo": "consignee",
+   "billAmount": 10500,
+   "discount": 0,
+   "payMode": "topay",
+   "receipts": [],
+   "truckId": "t11",
+   "driverId": "d2",
+   "freight": 9000,
+   "ownerPayments": [],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-11-10",
+   "deliveredOn": "2026-11-15",
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lrd47",
+   "company": "logistics",
+   "lrNo": 942,
+   "date": "2026-11-12",
+   "consignorId": "p49",
+   "consigneeId": "p46",
+   "from": "Morbi",
+   "to": "Malappuram",
+   "material": "Pvc Door Frame -4.8Mt",
+   "billTo": "consignee",
+   "billAmount": 73500,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [],
+   "truckId": "t15",
+   "driverId": "dd7",
+   "freight": 66500,
+   "ownerPayments": [
+    {
+     "id": "payd47o1",
+     "date": "2026-11-12",
+     "amount": 64500,
+     "note": "Advance"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-11-12",
+   "deliveredOn": "2026-11-17",
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lrd48",
+   "company": "logistics",
+   "lrNo": 943,
+   "date": "2026-11-13",
+   "consignorId": "p3",
+   "consigneeId": "p9",
+   "from": "Ahmedabad",
+   "to": "Kannur",
+   "material": "Ss Utensils- 1.5Mt",
+   "billTo": "consignee",
+   "billAmount": 103000,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [],
+   "truckId": "t13",
+   "driverId": "dd5",
+   "freight": 91000,
+   "ownerPayments": [
+    {
+     "id": "payd48o1",
+     "date": "2026-11-13",
+     "amount": 89000,
+     "note": "Advance"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-11-13",
+   "deliveredOn": "2026-11-18",
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lrd49",
+   "company": "logistics",
+   "lrNo": 944,
+   "date": "2026-11-14",
+   "consignorId": "p13",
+   "consigneeId": "p46",
+   "from": "Vadodara",
+   "to": "Parappanangadi",
+   "material": "Fishing Net- 12Mt",
+   "billTo": "consignee",
+   "billAmount": 109500,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [],
+   "truckId": "t14",
+   "driverId": "d5",
+   "freight": 100000,
+   "ownerPayments": [
+    {
+     "id": "payd49o1",
+     "date": "2026-11-14",
+     "amount": 99500,
+     "note": "Advance"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-11-14",
+   "deliveredOn": "2026-11-19",
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lrd50",
+   "company": "logistics",
+   "lrNo": 945,
+   "date": "2026-11-14",
+   "consignorId": "p22",
+   "consigneeId": "p9",
+   "from": "Vadodara",
+   "to": "Parappanangadi",
+   "material": "Fishing Net- 12Mt",
+   "billTo": "consignee",
+   "billAmount": 66000,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [],
+   "truckId": "t10",
+   "driverId": "dd6",
+   "freight": 60000,
+   "ownerPayments": [
+    {
+     "id": "payd50o1",
+     "date": "2026-11-14",
+     "amount": 58000,
+     "note": "Advance"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-11-14",
+   "deliveredOn": "2026-11-20",
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lrd51",
+   "company": "logistics",
+   "lrNo": 946,
+   "date": "2026-11-16",
+   "consignorId": "p38",
+   "consigneeId": "p59",
+   "from": "Dahej",
+   "to": "Cochin",
+   "material": "Boric Acid-9.2Mt",
+   "billTo": "consignee",
+   "billAmount": 90500,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "payd51r1",
+     "date": "2026-11-22",
+     "amount": 40000,
+     "note": "Part payment"
+    }
+   ],
+   "truckId": "t15",
+   "driverId": "d1",
+   "freight": 78000,
+   "ownerPayments": [
+    {
+     "id": "payd51o1",
+     "date": "2026-11-16",
+     "amount": 77500,
+     "note": "Advance"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-11-16",
+   "deliveredOn": "2026-11-21",
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lrd52",
+   "company": "logistics",
+   "lrNo": 947,
+   "date": "2026-11-16",
+   "consignorId": "p27",
+   "consigneeId": "p55",
+   "from": "Vadodara",
+   "to": "Parappanangadi",
+   "material": "Fishing Net- 12Mt",
+   "billTo": "consignee",
+   "billAmount": 42500,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [],
+   "truckId": "t16",
+   "driverId": "dd8",
+   "freight": 38500,
+   "ownerPayments": [
+    {
+     "id": "payd52o1",
+     "date": "2026-11-16",
+     "amount": 35500,
+     "note": "Advance"
+    }
+   ],
+   "includedIn": null,
+   "status": "delivered",
+   "loadedOn": "2026-11-16",
+   "deliveredOn": "2026-11-20",
+   "remarks": null,
+   "locations": []
+  },
+  {
+   "id": "lrd53",
+   "company": "logistics",
+   "lrNo": 948,
+   "date": "2026-11-17",
+   "consignorId": "p3",
+   "consigneeId": "p32",
+   "from": "Ahmedabad",
+   "to": "Kannur",
+   "material": "Ss Utensils-2.778Mt",
+   "billTo": "consignee",
+   "billAmount": 109500,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [],
+   "truckId": "t15",
+   "driverId": "dd2",
+   "freight": 96500,
+   "ownerPayments": [
+    {
+     "id": "payd53o1",
+     "date": "2026-11-17",
+     "amount": 96000,
+     "note": "Advance"
+    }
+   ],
+   "includedIn": null,
+   "status": "in_transit",
+   "loadedOn": "2026-11-17",
+   "deliveredOn": null,
+   "remarks": null,
+   "locations": [
+    {
+     "id": "locd530",
+     "at": "2026-11-22T18:00:00.000Z",
+     "place": "Near Mangalore"
+    },
+    {
+     "id": "locd531",
+     "at": "2026-11-22T14:00:00.000Z",
+     "place": "Near Goa"
+    },
+    {
+     "id": "locd532",
+     "at": "2026-11-22T10:00:00.000Z",
+     "place": "Near Belgaum"
+    },
+    {
+     "id": "locd533",
+     "at": "2026-11-21T18:00:00.000Z",
+     "place": "Near Kolhapur"
+    },
+    {
+     "id": "locd534",
+     "at": "2026-11-21T14:00:00.000Z",
+     "place": "Near Mumbai"
+    },
+    {
+     "id": "locd535",
+     "at": "2026-11-21T10:00:00.000Z",
+     "place": "Near Vapi"
+    }
+   ]
+  },
+  {
+   "id": "lrd54",
+   "company": "roadways",
+   "lrNo": 3155,
+   "date": "2026-11-17",
+   "consignorId": "p12",
+   "consigneeId": "p6",
+   "from": "Tirunelveli",
+   "to": "Morbi",
+   "material": "Activated Carbon- 28Mt",
+   "billTo": "consignee",
+   "billAmount": 38000,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [
+    {
+     "id": "payd54r1",
+     "date": "2026-11-22",
+     "amount": 15000,
+     "note": "Part payment"
+    }
+   ],
+   "truckId": "t5",
+   "driverId": "dd3",
+   "freight": 35000,
+   "ownerPayments": [
+    {
+     "id": "payd54o1",
+     "date": "2026-11-17",
+     "amount": 33000,
+     "note": "Advance"
+    }
+   ],
+   "includedIn": null,
+   "status": "in_transit",
+   "loadedOn": "2026-11-17",
+   "deliveredOn": null,
+   "remarks": null,
+   "locations": [
+    {
+     "id": "locd540",
+     "at": "2026-11-22T18:00:00.000Z",
+     "place": "Near Mangalore"
+    },
+    {
+     "id": "locd541",
+     "at": "2026-11-22T14:00:00.000Z",
+     "place": "Near Goa"
+    },
+    {
+     "id": "locd542",
+     "at": "2026-11-22T10:00:00.000Z",
+     "place": "Near Belgaum"
+    },
+    {
+     "id": "locd543",
+     "at": "2026-11-21T18:00:00.000Z",
+     "place": "Near Kolhapur"
+    },
+    {
+     "id": "locd544",
+     "at": "2026-11-21T14:00:00.000Z",
+     "place": "Near Mumbai"
+    },
+    {
+     "id": "locd545",
+     "at": "2026-11-21T10:00:00.000Z",
+     "place": "Near Vapi"
+    }
+   ]
+  },
+  {
+   "id": "lrd55",
+   "company": "roadways",
+   "lrNo": 3156,
+   "date": "2026-11-18",
+   "consignorId": "p56",
+   "consigneeId": "p2",
+   "from": "Surat",
+   "to": "Mannarkadu",
+   "material": "Pvc Sheets & Sections- 2Mt",
+   "billTo": "consignee",
+   "billAmount": 88500,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [],
+   "truckId": "t12",
+   "driverId": "dd8",
+   "freight": 75000,
+   "ownerPayments": [
+    {
+     "id": "payd55o1",
+     "date": "2026-11-18",
+     "amount": 74500,
+     "note": "Advance"
+    }
+   ],
+   "includedIn": null,
+   "status": "in_transit",
+   "loadedOn": "2026-11-18",
+   "deliveredOn": null,
+   "remarks": null,
+   "locations": [
+    {
+     "id": "locd550",
+     "at": "2026-11-22T18:00:00.000Z",
+     "place": "Near Goa"
+    },
+    {
+     "id": "locd551",
+     "at": "2026-11-22T14:00:00.000Z",
+     "place": "Near Belgaum"
+    },
+    {
+     "id": "locd552",
+     "at": "2026-11-22T10:00:00.000Z",
+     "place": "Near Kolhapur"
+    },
+    {
+     "id": "locd553",
+     "at": "2026-11-21T18:00:00.000Z",
+     "place": "Near Mumbai"
+    },
+    {
+     "id": "locd554",
+     "at": "2026-11-21T14:00:00.000Z",
+     "place": "Near Vapi"
+    }
+   ]
+  },
+  {
+   "id": "lrd56",
+   "company": "logistics",
+   "lrNo": 949,
+   "date": "2026-11-19",
+   "consignorId": "p10",
+   "consigneeId": "p39",
+   "from": "Vadodara",
+   "to": "Ernakulam",
+   "material": "Fishing Net- 12Mt",
+   "billTo": "consignee",
+   "billAmount": 57500,
+   "discount": 575,
+   "payMode": "tbb",
+   "receipts": [],
+   "truckId": "t5",
+   "driverId": "d3",
+   "freight": 54000,
+   "ownerPayments": [
+    {
+     "id": "payd56o1",
+     "date": "2026-11-19",
+     "amount": 51000,
+     "note": "Advance"
+    }
+   ],
+   "includedIn": null,
+   "status": "in_transit",
+   "loadedOn": "2026-11-19",
+   "deliveredOn": null,
+   "remarks": null,
+   "locations": [
+    {
+     "id": "locd560",
+     "at": "2026-11-22T18:00:00.000Z",
+     "place": "Near Belgaum"
+    },
+    {
+     "id": "locd561",
+     "at": "2026-11-22T14:00:00.000Z",
+     "place": "Near Kolhapur"
+    },
+    {
+     "id": "locd562",
+     "at": "2026-11-22T10:00:00.000Z",
+     "place": "Near Mumbai"
+    },
+    {
+     "id": "locd563",
+     "at": "2026-11-21T18:00:00.000Z",
+     "place": "Near Vapi"
+    }
+   ]
+  },
+  {
+   "id": "lrd57",
+   "company": "logistics",
+   "lrNo": 950,
+   "date": "2026-11-19",
+   "consignorId": "p3",
+   "consigneeId": "p2",
+   "from": "Vadodara",
+   "to": "Kannur",
+   "material": "Jug 20Ltr",
+   "billTo": "consignee",
+   "billAmount": 86500,
+   "discount": 0,
+   "payMode": "tbb",
+   "receipts": [],
+   "truckId": "t4",
+   "driverId": "d2",
+   "freight": 74000,
+   "ownerPayments": [
+    {
+     "id": "payd57o1",
+     "date": "2026-11-19",
+     "amount": 73000,
+     "note": "Advance"
+    }
+   ],
+   "includedIn": null,
+   "status": "in_transit",
+   "loadedOn": "2026-11-19",
+   "deliveredOn": null,
+   "remarks": null,
+   "locations": [
+    {
+     "id": "locd570",
+     "at": "2026-11-22T18:00:00.000Z",
+     "place": "Near Belgaum"
+    },
+    {
+     "id": "locd571",
+     "at": "2026-11-22T14:00:00.000Z",
+     "place": "Near Kolhapur"
+    },
+    {
+     "id": "locd572",
+     "at": "2026-11-22T10:00:00.000Z",
+     "place": "Near Mumbai"
+    },
+    {
+     "id": "locd573",
+     "at": "2026-11-21T18:00:00.000Z",
+     "place": "Near Vapi"
+    }
+   ]
+  },
+  {
+   "id": "lrd58",
+   "company": "roadways",
+   "lrNo": 3157,
+   "date": "2026-11-20",
+   "consignorId": "p21",
+   "consigneeId": "p18",
+   "from": "Vadodara",
+   "to": "Kannur",
+   "material": "Jug 20Ltr",
+   "billTo": "consignee",
+   "billAmount": 22000,
+   "discount": 220,
+   "payMode": "tbb",
+   "receipts": [],
+   "truckId": "t12",
+   "driverId": "dd4",
+   "freight": 19000,
+   "ownerPayments": [
+    {
+     "id": "payd58o1",
+     "date": "2026-11-20",
+     "amount": 17000,
+     "note": "Advance"
+    }
+   ],
+   "includedIn": null,
+   "status": "in_transit",
+   "loadedOn": "2026-11-20",
+   "deliveredOn": null,
+   "remarks": null,
+   "locations": [
+    {
+     "id": "locd580",
+     "at": "2026-11-22T18:00:00.000Z",
+     "place": "Near Kolhapur"
+    },
+    {
+     "id": "locd581",
+     "at": "2026-11-22T14:00:00.000Z",
+     "place": "Near Mumbai"
+    },
+    {
+     "id": "locd582",
+     "at": "2026-11-22T10:00:00.000Z",
+     "place": "Near Vapi"
+    }
+   ]
   }
  ]
 }

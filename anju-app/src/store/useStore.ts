@@ -122,10 +122,17 @@ export const useStore = create<State>()(
     }),
     {
       name: "anju-demo",
-      version: 2,
+      version: 3,
       // v2: every party gets a GST and every owner a PAN (dummy where none was given)
+      // v3: Oct–Nov demo bookings and drivers added to the seed
       migrate: (persisted, version) => {
         const s = persisted as State
+        if (version < 3) {
+          const haveLr = new Set(s.lrs?.map((l) => l.id))
+          const haveDriver = new Set(s.drivers?.map((d) => d.id))
+          s.lrs = [...(s.lrs ?? []), ...seedDb.lrs.filter((l) => !haveLr.has(l.id))]
+          s.drivers = [...(s.drivers ?? []), ...seedDb.drivers.filter((d) => !haveDriver.has(d.id))]
+        }
         if (version < 2) {
           const seedGst = new Map(seedDb.parties.map((p) => [p.id, p.gst]))
           const seedPan = new Map(seedDb.owners.map((o) => [o.id, o.pan]))
