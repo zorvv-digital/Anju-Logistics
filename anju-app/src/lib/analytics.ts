@@ -2,8 +2,11 @@ import { totals, type Totals } from "./calc"
 import { localIso } from "./format"
 import type { Lr } from "./types"
 
-/** Weekly / monthly / yearly browse by one period at a time; "custom" is any from–to range. */
-export type PeriodKind = "week" | "month" | "year" | "custom"
+/** "all" = every booking; weekly / monthly / yearly browse one period at a time; "custom" is any from–to range. */
+export type PeriodKind = "all" | "week" | "month" | "year" | "custom"
+/** The kinds with ◀ ▶ browsing */
+export type Browsable = "week" | "month" | "year"
+export const isBrowsable = (k: PeriodKind): k is Browsable => k === "week" || k === "month" || k === "year"
 /** Inclusive date range as YYYY-MM-DD. */
 export interface Range {
   from: string
@@ -23,7 +26,7 @@ const addDays = (d: Date, n: number) => new Date(d.getFullYear(), d.getMonth(), 
 export const daysIn = (r: Range) => Math.round((parseIso(r.to).getTime() - parseIso(r.from).getTime()) / 864e5) + 1
 
 /** The week (Mon–Sun), month or year that contains the anchor date. */
-export function periodRange(kind: Exclude<PeriodKind, "custom">, anchor: string): Range {
+export function periodRange(kind: Browsable, anchor: string): Range {
   const d = parseIso(anchor)
   if (kind === "week") {
     const start = addDays(d, -((d.getDay() + 6) % 7))
@@ -36,7 +39,7 @@ export function periodRange(kind: Exclude<PeriodKind, "custom">, anchor: string)
 }
 
 /** Move the anchor one week / month / year back (-1) or forward (+1). */
-export function shiftAnchor(kind: Exclude<PeriodKind, "custom">, anchor: string, dir: 1 | -1) {
+export function shiftAnchor(kind: Browsable, anchor: string, dir: 1 | -1) {
   const d = parseIso(anchor)
   if (kind === "week") return localIso(addDays(d, 7 * dir))
   if (kind === "month") return localIso(new Date(d.getFullYear(), d.getMonth() + dir, 1))
@@ -45,7 +48,7 @@ export function shiftAnchor(kind: Exclude<PeriodKind, "custom">, anchor: string,
 
 /** The period just before, for "vs last month" deltas. Custom ranges compare to the same number of days before. */
 export function previousRange(kind: PeriodKind, r: Range): Range {
-  if (kind !== "custom") return periodRange(kind, shiftAnchor(kind, r.from, -1))
+  if (isBrowsable(kind)) return periodRange(kind, shiftAnchor(kind, r.from, -1))
   const end = addDays(parseIso(r.from), -1)
   return { from: localIso(addDays(end, -(daysIn(r) - 1))), to: localIso(end) }
 }
@@ -65,7 +68,7 @@ export function rangeLabel(kind: PeriodKind, r: Range) {
 
 /** Short name of the previous period for deltas: "last week", "last month", "last year", "previous 30 days". */
 export const previousName = (kind: PeriodKind, r: Range) =>
-  kind === "custom" ? `previous ${daysIn(r)} day${daysIn(r) > 1 ? "s" : ""}` : `last ${kind}`
+  isBrowsable(kind) ? `last ${kind}` : `previous ${daysIn(r)} day${daysIn(r) > 1 ? "s" : ""}`
 
 export type Grain = "day" | "week" | "month"
 /** Days for up to two weeks, weeks up to ~3 months, months beyond — keeps the chart to ≤ ~14 columns mostly. */
@@ -133,6 +136,9 @@ export function topParties(lrs: Lr[], nameOf: (lr: Lr) => string | undefined, li
     .sort((a, b) => b.billed - a.billed)
     .slice(0, limit)
 }
+
+/** First booking date — where "All time" starts. */
+export const earliestDate = (lrs: Lr[]) => lrs.reduce<string | null>((m, l) => (l.date && (!m || l.date < m) ? l.date : m), null)
 
 /** Most recent booking date, to jump to when the chosen period is empty. */
 export const latestDate = (lrs: Lr[]) => lrs.reduce<string | null>((m, l) => (l.date && (!m || l.date > m) ? l.date : m), null)

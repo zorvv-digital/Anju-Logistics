@@ -12,8 +12,8 @@ import { Input } from "@/components/ui/input"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import {
-  change, inRange, latestDate, periodRange, previousName, previousRange, rangeLabel, series, shiftAnchor, topParties,
-  type PeriodKind, type Range,
+  change, earliestDate, inRange, isBrowsable, latestDate, periodRange, previousName, previousRange, rangeLabel, series, shiftAnchor,
+  topParties, type Browsable, type PeriodKind, type Range,
 } from "@/lib/analytics"
 import { byCompany, totals } from "@/lib/calc"
 import { money, moneyShort, today } from "@/lib/format"
@@ -30,6 +30,7 @@ const SERIES: ChartSeries[] = [
 ]
 
 const KINDS: { value: PeriodKind; label: string }[] = [
+  { value: "all", label: "All time" },
   { value: "week", label: "Weekly" },
   { value: "month", label: "Monthly" },
   { value: "year", label: "Yearly" },
@@ -72,14 +73,27 @@ function Analytics() {
   const [showTable, setShowTable] = useState(false)
 
   // Filters live in the URL so a view can be bookmarked / shared
-  const kind = (["week", "month", "year", "custom"].includes(params.get("p") ?? "") ? params.get("p") : "month") as PeriodKind
-  const anchor = params.get("a") ?? today()
-  const customFrom = params.get("from") ?? periodRange("month", today()).from
-  const customTo = params.get("to") ?? today()
+  // Default: All time, so every booking already entered (by either login) is counted
+  const kind = (["all", "week", "month", "year", "custom"].includes(params.get("p") ?? "") ? params.get("p") : "all") as PeriodKind
+  const latest = latestDate(lrs)
+  const earliest = earliestDate(lrs)
+  // A week / month / year opens on the current one — or, if nothing is booked in it yet,
+  // on the latest one that has bookings, so it never opens empty.
+  const emptyNow = (k: Browsable) => inRange(lrs, periodRange(k, today())).length === 0
+  const picked = params.get("a")
+  const anchor = picked ?? (latest && isBrowsable(kind) && emptyNow(kind) ? latest : today())
+  const jumped = !picked && isBrowsable(kind) && anchor !== today()
+  const customBase = latest && emptyNow("month") ? latest : today()
+  const customFrom = params.get("from") ?? periodRange("month", customBase).from
+  const customTo = params.get("to") ?? (customBase === today() ? today() : periodRange("month", customBase).to)
   const setFilter = (next: Record<string, string>) => setParams({ ...Object.fromEntries(params), ...next }, { replace: true })
 
   const range: Range =
-    kind === "custom" ? { from: customFrom <= customTo ? customFrom : customTo, to: customFrom <= customTo ? customTo : customFrom } : periodRange(kind, anchor)
+    kind === "all"
+      ? { from: earliest ?? today(), to: latest && latest > today() ? latest : today() }
+      : kind === "custom"
+        ? { from: customFrom <= customTo ? customFrom : customTo, to: customFrom <= customTo ? customTo : customFrom }
+        : periodRange(kind, anchor)
   const prev = previousRange(kind, range)
   const vs = previousName(kind, range)
 
@@ -89,9 +103,10 @@ function Analytics() {
   const p = totals(inRange(lrs, prev))
   const points = series(now, range)
   const parties = topParties(now, (lr) => look.party(lr.billTo === "consignee" ? lr.consigneeId : lr.consignorId)?.name)
-  const latest = latestDate(lrs)
   // No browsing into periods that haven't started yet
-  const nextStartsLater = kind !== "custom" && periodRange(kind, shiftAnchor(kind, anchor, 1)).from > today()
+  const nextStartsLater = isBrowsable(kind) && periodRange(kind, shiftAnchor(kind, anchor, 1)).from > today()
+  // "vs last month" only makes sense when there is a previous period
+  const delta = (nowV: number, beforeV: number) => (kind === "all" ? null : <Delta now={nowV} before={beforeV} vs={vs} />)
   const margin = t.bill ? t.profit / t.bill : 0
 
   return (
@@ -112,7 +127,11 @@ function Analytics() {
             ))}
           </TabsList>
         </Tabs>
-        {kind === "custom" ? (
+        {kind === "all" ? (
+          <p className="text-sm text-muted-foreground" aria-live="polite">
+            Every booking · <span className="font-medium text-foreground">{rangeLabel("custom", range)}</span>
+          </p>
+        ) : kind === "custom" ? (
           <div className="flex flex-wrap items-center gap-2 text-sm">
             <label htmlFor="an-from" className="text-muted-foreground">From</label>
             <Input id="an-from" type="date" className="w-40" value={customFrom} max={customTo} onChange={(e) => e.target.value && setFilter({ from: e.target.value })} />
@@ -136,6 +155,12 @@ function Analytics() {
           </div>
         )}
       </div>
+      {jumped && (
+        <p className="-mt-3 text-sm text-muted-foreground">
+          Nothing booked in {rangeLabel(kind, periodRange(kind as Browsable, today()))} yet — showing{" "}
+          {rangeLabel(kind, range)}, the latest {kind} with bookings.
+        </p>
+      )}
 
       {now.length === 0 ? (
         <EmptyState
@@ -152,24 +177,28 @@ function Analytics() {
         />
       ) : (
         <>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
-            <StatCard label="Bookings" value={String(t.count)} icon={FileText} hint={<Delta now={t.count} before={p.count} vs={vs} />} />
-            <StatCard label="Billed" value={moneyShort(t.bill)} icon={IndianRupee} hint={<Delta now={t.bill} before={p.bill} vs={vs} />} />
+          <div className="grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-5">
+            <StatCard label="Bookings" value={String(t.count)} icon={FileText} tint="lavender" hint={delta(t.count, p.count) ?? `Since ${rangeLabel("custom", { from: range.from, to: range.from })}`} />
+            <StatCard label="Billed" value={moneyShort(t.bill)} icon={IndianRupee} tint="rose" hint={delta(t.bill, p.bill) ?? `${moneyShort(t.count ? t.bill / t.count : 0)} per booking`} />
             <StatCard
               label="Received"
               value={moneyShort(t.received)}
               icon={ArrowDownCircle}
+              tint="mint"
               hint={t.toCollect > 0 ? `${moneyShort(t.toCollect)} still to collect` : "All collected"}
             />
-            <StatCard label="Freight" value={moneyShort(t.freight)} icon={Truck} hint={t.toPayOwner > 0 ? `${moneyShort(t.toPayOwner)} still to pay` : "All paid"} />
+            <StatCard label="Freight" value={moneyShort(t.freight)} icon={Truck} tint="sky" hint={t.toPayOwner > 0 ? `${moneyShort(t.toPayOwner)} still to pay` : "All paid"} />
             <StatCard
               label="Profit"
               value={moneyShort(t.profit)}
               icon={IndianRupee}
-              tone={t.profit < 0 ? "bad" : "good"}
+              tint="cream"
+              className="col-span-2 lg:col-span-1"
+              tone={t.profit < 0 ? "bad" : "default"}
               hint={
                 <>
-                  {Math.round(margin * 100)}% margin · <Delta now={t.profit} before={p.profit} vs={vs} />
+                  {Math.round(margin * 100)}% margin
+                  {kind !== "all" && <> · {delta(t.profit, p.profit)}</>}
                 </>
               }
             />

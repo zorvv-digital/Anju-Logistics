@@ -1,6 +1,6 @@
 import { Search, SearchX } from "lucide-react"
 import { useMemo } from "react"
-import { useSearchParams } from "react-router-dom"
+import { useLocation, useSearchParams } from "react-router-dom"
 import { PageHeader } from "@/components/common/PageHeader"
 import { EmptyState } from "@/components/common/states"
 import { LrTable } from "@/components/lr/LrTable"
@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { lrMoney } from "@/lib/calc"
+import { PAGE_SEARCH_ID } from "@/lib/pageSearch"
 import { useCompanyLrs, useLookups } from "@/store/selectors"
 
 type Filter = "all" | "due" | "road" | "delivered"
@@ -16,6 +17,7 @@ export function LrListPage() {
   const lrs = useCompanyLrs()
   const look = useLookups()
   const [params, setParams] = useSearchParams()
+  const location = useLocation()
   const q = params.get("q") ?? ""
   const filter = (params.get("filter") ?? "all") as Filter
 
@@ -48,8 +50,17 @@ export function LrListPage() {
       />
       <div className="flex flex-wrap items-center gap-3">
         <div className="relative min-w-56 flex-1">
-          <Search className="absolute top-2 left-2.5 size-4 text-muted-foreground" />
-          <Input className="pl-8" placeholder="Search LR no, party, place, truck…" value={q} onChange={(e) => update("q", e.target.value)} />
+          <Search className="absolute top-3 left-3 size-4 text-muted-foreground" />
+          <Input
+            id={PAGE_SEARCH_ID}
+            aria-label="Search bookings"
+            className="h-10 rounded-full bg-card pl-9"
+            placeholder="Search LR no, party, place, truck…"
+            // The round search button in the top bar lands here with the box ready to type in
+            autoFocus={!!(location.state as { focusSearch?: boolean } | null)?.focusSearch}
+            value={q}
+            onChange={(e) => update("q", e.target.value)}
+          />
         </div>
         <Tabs value={filter} onValueChange={(v) => update("filter", String(v))}>
           <TabsList>

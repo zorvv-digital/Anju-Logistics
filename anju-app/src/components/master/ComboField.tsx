@@ -112,7 +112,7 @@ export function ComboField({ kind, value, onChange, placeholder, invalid, id }: 
               role="combobox"
               aria-expanded={open}
               aria-invalid={invalid}
-              className={cn("w-full justify-between font-normal", !selected && "text-muted-foreground")}
+              className={cn("w-full justify-between rounded-lg font-normal", !selected && "text-muted-foreground")}
             />
           }
         >

@@ -1,7 +1,8 @@
-import { ChevronDown, PartyPopper } from "lucide-react"
+import { ChevronDown, PartyPopper, Search, SearchX, Truck } from "lucide-react"
 import { useState } from "react"
-import { Link } from "react-router-dom"
+import { Link, useLocation, useSearchParams } from "react-router-dom"
 import { toast } from "sonner"
+import { Avatar } from "@/components/common/Avatar"
 import { CompanyBadge } from "@/components/common/badges"
 import { Field } from "@/components/common/Field"
 import { PageHeader } from "@/components/common/PageHeader"
@@ -11,16 +12,36 @@ import { Card, CardAction, CardContent, CardDescription, CardHeader, CardTitle }
 import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle } from "@/components/ui/dialog"
 import { Input } from "@/components/ui/input"
 import { allocateOwnerPayment, lrMoney } from "@/lib/calc"
-import { date, money, text, today } from "@/lib/format"
-import { useOwnerDues } from "@/store/selectors"
+import { date, money, today } from "@/lib/format"
+import { PAGE_SEARCH_ID } from "@/lib/pageSearch"
+import { useLookups, useOwnerDues } from "@/store/selectors"
 import { useStore } from "@/store/useStore"
 
 type Due = ReturnType<typeof useOwnerDues>[number]
 
+/** "KL 49-H 9086" → "kl49h9086", so truck numbers match however they're typed */
+const squash = (s: string) => s.toLowerCase().replace(/[\s\-./]/g, "")
+
 export function OwnersPage() {
   const dues = useOwnerDues()
+  const trucks = useStore((s) => s.trucks)
   const total = dues.reduce((t, d) => t + d.due, 0)
   const [paying, setPaying] = useState<Due | null>(null)
+  const [params, setParams] = useSearchParams()
+  const location = useLocation()
+  const q = params.get("q") ?? ""
+
+  const setQ = (v: string) => setParams(v ? { q: v } : {}, { replace: true })
+
+  // Match the owner's name, or any truck they own
+  const needle = q.trim().toLowerCase()
+  const shown = needle
+    ? dues.filter((d) => {
+        const name = (d.owner?.name ?? "").toLowerCase()
+        const numbers = trucks.filter((t) => t.ownerId && t.ownerId === d.owner?.id).map((t) => squash(t.number))
+        return name.includes(needle) || numbers.some((n) => n.includes(squash(needle)))
+      })
+    : dues
 
   return (
     <>
@@ -28,11 +49,41 @@ export function OwnersPage() {
       {dues.length === 0 ? (
         <EmptyState icon={PartyPopper} title="All owners are paid" description="Balances show up here after a truck is booked." />
       ) : (
-        <div className="grid gap-3">
-          {dues.map((d) => (
-            <OwnerCard key={d.owner?.id ?? "unknown"} due={d} onPay={() => setPaying(d)} />
-          ))}
-        </div>
+        <>
+          <div className="relative">
+            <Search className="absolute top-3 left-3 size-4 text-muted-foreground" />
+            <Input
+              id={PAGE_SEARCH_ID}
+              type="search"
+              aria-label="Search truck owners"
+              className="h-10 rounded-full bg-card pr-4 pl-9"
+              placeholder="Search by truck number or owner name…"
+              // The round search button in the top bar lands here with the box ready to type in
+              autoFocus={!!(location.state as { focusSearch?: boolean } | null)?.focusSearch}
+              value={q}
+              onChange={(e) => setQ(e.target.value)}
+            />
+          </div>
+          {needle && shown.length > 0 && (
+            <p className="-mt-3 text-sm text-muted-foreground">
+              {shown.length} of {dues.length} owners match “{q.trim()}”
+            </p>
+          )}
+          {shown.length === 0 ? (
+            <EmptyState
+              icon={SearchX}
+              title="No owner or truck matches"
+              description={`Nothing found for “${q.trim()}”. Check the truck number or the owner's name.`}
+              action={<Button variant="outline" onClick={() => setQ("")}>Clear search</Button>}
+            />
+          ) : (
+            <div className="grid items-start gap-4 lg:grid-cols-2">
+              {shown.map((d) => (
+                <OwnerCard key={d.owner?.id ?? "unknown"} due={d} onPay={() => setPaying(d)} />
+              ))}
+            </div>
+          )}
+        </>
       )}
       <SettleDialog key={paying?.owner?.id ?? "none"} due={paying} onClose={() => setPaying(null)} />
     </>
@@ -41,30 +92,47 @@ export function OwnersPage() {
 
 function OwnerCard({ due, onPay }: { due: Due; onPay: () => void }) {
   const [open, setOpen] = useState(false)
+  const allTrucks = useStore((s) => s.trucks)
+  const look = useLookups()
+  // Every truck this owner has on file (not just the ones on unpaid trips)
+  const trucks = allTrucks.filter((t) => t.ownerId && t.ownerId === due.owner?.id)
+  const truckNos = trucks.map((t) => t.number).join(", ")
   return (
     <Card>
       <CardHeader>
-        <CardTitle>{due.owner?.name ?? "Unknown owner"}</CardTitle>
-        <CardDescription>
-          {due.lrs.length} trip{due.lrs.length > 1 ? "s" : ""} · PAN {text(due.owner?.pan)} · {text(due.owner?.phone)}
-        </CardDescription>
+        <div className="flex min-w-0 items-center gap-3">
+          <Avatar name={due.owner?.name ?? "Unknown owner"} className="size-10" />
+          <div className="min-w-0">
+            <CardTitle className="truncate">{due.owner?.name ?? "Unknown owner"}</CardTitle>
+            {/* Truck numbers in place of PAN (PAN is still on the owner record and on printouts) */}
+            <CardDescription className="flex min-w-0 items-center gap-1.5" title={truckNos}>
+              <Truck className="size-3.5 shrink-0" aria-label={trucks.length > 1 ? "Trucks" : "Truck"} />
+              <span className="truncate">
+                <span className="font-semibold tracking-wide text-foreground/80">{truckNos || "No truck on file"}</span>
+                {" · "}
+                {due.lrs.length} unpaid trip{due.lrs.length > 1 ? "s" : ""}
+                {due.owner?.phone && ` · ${due.owner.phone}`}
+              </span>
+            </CardDescription>
+          </div>
+        </div>
         <CardAction>
-          <Button size="sm" onClick={onPay}>Pay</Button>
+          <Button onClick={onPay}>Pay</Button>
         </CardAction>
       </CardHeader>
       <CardContent>
-        <dl className="grid grid-cols-3 gap-2 rounded-lg border bg-muted/50 p-3 text-sm">
-          <div>
-            <dt className="text-xs text-muted-foreground">Freight</dt>
-            <dd className="font-medium tabular-nums">{money(due.freight)}</dd>
+        <dl className="grid grid-cols-3 gap-2 text-sm">
+          <div className="rounded-xl bg-tint-sky px-3 py-2.5">
+            <dt className="text-xs text-foreground/60">Freight</dt>
+            <dd className="font-bold tracking-tight tabular-nums">{money(due.freight)}</dd>
           </div>
-          <div>
-            <dt className="text-xs text-muted-foreground">Paid</dt>
-            <dd className="font-medium tabular-nums text-emerald-600">{money(due.paid)}</dd>
+          <div className="rounded-xl bg-tint-mint px-3 py-2.5">
+            <dt className="text-xs text-foreground/60">Paid</dt>
+            <dd className="font-bold tracking-tight tabular-nums">{money(due.paid)}</dd>
           </div>
-          <div>
-            <dt className="text-xs text-muted-foreground">Balance</dt>
-            <dd className="font-semibold tabular-nums text-destructive">{money(due.due)}</dd>
+          <div className="rounded-xl bg-tint-rose px-3 py-2.5">
+            <dt className="text-xs text-foreground/60">Balance</dt>
+            <dd className="font-bold tracking-tight text-destructive tabular-nums">{money(due.due)}</dd>
           </div>
         </dl>
         <Button variant="ghost" size="sm" className="mt-2" onClick={() => setOpen((o) => !o)} aria-expanded={open}>
@@ -78,7 +146,10 @@ function OwnerCard({ due, onPay }: { due: Due; onPay: () => void }) {
                 <li key={lr.id} className="flex flex-wrap items-center justify-between gap-x-4 gap-y-1 py-2">
                   <Link to={`/lr/${lr.id}`} className="flex items-center gap-2 hover:underline">
                     LR {lr.lrNo} <CompanyBadge company={lr.company} short />
-                    <span className="text-muted-foreground">{date(lr.date)} · {lr.to}</span>
+                    <span className="text-muted-foreground">
+                      {date(lr.date)} · {lr.to}
+                      {trucks.length > 1 && ` · ${look.truck(lr.truckId)?.number ?? "—"}`}
+                    </span>
                   </Link>
                   <span className="flex gap-3 text-xs tabular-nums">
                     <span><span className="text-muted-foreground">Freight </span>{money(m.freight)}</span>

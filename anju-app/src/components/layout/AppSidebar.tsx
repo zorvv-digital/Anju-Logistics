@@ -1,6 +1,5 @@
-import { BarChart3, FileText, Home, LogOut, RotateCcw, Sheet, Truck } from "lucide-react"
+import { BarChart3, FileText, Home, Sheet, Truck } from "lucide-react"
 import { Link, useLocation } from "react-router-dom"
-import { toast } from "sonner"
 import {
   Sidebar, SidebarContent, SidebarFooter, SidebarGroup, SidebarGroupContent, SidebarHeader,
   SidebarMenu, SidebarMenuButton, SidebarMenuItem, useSidebar,
@@ -15,30 +14,33 @@ const NAV = [
   { to: "/sheet", label: "Sheet view", icon: Sheet },
 ]
 
+/** Account actions (reset demo data, log out) live in the profile menu in the top bar. */
 export function AppSidebar() {
   const { pathname } = useLocation()
   const { setOpenMobile } = useSidebar()
-  const userName = useStore((s) => s.userName)
   const role = useStore((s) => s.role)
-  const logout = useStore((s) => s.logout)
-  const resetDemo = useStore((s) => s.resetDemo)
 
   const active = (to: string) => (to === "/" ? pathname === "/" : pathname.startsWith(to))
 
   return (
     <Sidebar>
-      <SidebarHeader>
-        <Link to="/" onClick={() => setOpenMobile(false)} className="block px-2 py-2">
+      <SidebarHeader className="px-4 pt-5 pb-3">
+        <Link to="/" onClick={() => setOpenMobile(false)} className="block">
           <img src="/logo.png" alt="Anju Logistics" className="h-auto w-full" />
         </Link>
       </SidebarHeader>
       <SidebarContent>
-        <SidebarGroup>
+        <SidebarGroup className="px-3">
+          <p className="px-3 pb-2 text-[11px] font-semibold tracking-wider text-muted-foreground uppercase">Menu</p>
           <SidebarGroupContent>
-            <SidebarMenu>
+            <SidebarMenu className="gap-1">
               {NAV.filter((n) => !n.ownerOnly || role === "owner").map(({ to, label, icon: Icon }) => (
                 <SidebarMenuItem key={to}>
-                  <SidebarMenuButton isActive={active(to)} render={<Link to={to} onClick={() => setOpenMobile(false)} />}>
+                  <SidebarMenuButton
+                    isActive={active(to)}
+                    className="data-active:bg-primary data-active:font-semibold data-active:text-primary-foreground data-active:shadow-sm data-active:hover:bg-primary/90 data-active:hover:text-primary-foreground"
+                    render={<Link to={to} onClick={() => setOpenMobile(false)} />}
+                  >
                     <Icon />
                     <span>{label}</span>
                   </SidebarMenuButton>
@@ -48,31 +50,8 @@ export function AppSidebar() {
           </SidebarGroupContent>
         </SidebarGroup>
       </SidebarContent>
-      <SidebarFooter>
-        <SidebarMenu>
-          <SidebarMenuItem>
-            <div className="px-2 py-1 text-xs text-muted-foreground">
-              {userName} · {role === "owner" ? "Owner" : "Accountant"}
-            </div>
-          </SidebarMenuItem>
-          <SidebarMenuItem>
-            <SidebarMenuButton
-              onClick={() => {
-                resetDemo()
-                toast.success("Demo data reset")
-              }}
-            >
-              <RotateCcw />
-              <span>Reset demo data</span>
-            </SidebarMenuButton>
-          </SidebarMenuItem>
-          <SidebarMenuItem>
-            <SidebarMenuButton onClick={logout}>
-              <LogOut />
-              <span>Log out</span>
-            </SidebarMenuButton>
-          </SidebarMenuItem>
-        </SidebarMenu>
+      <SidebarFooter className="px-4 pb-4">
+        <p className="text-xs text-muted-foreground">Anju Logistics · Since 1992</p>
       </SidebarFooter>
     </Sidebar>
   )

@@ -103,7 +103,7 @@ function LrForm({ existingId }: { existingId: string | null }) {
         save(false)
       }}
     >
-      <PageHeader title={existing ? `Edit LR ${existing.lrNo}` : "New booking"} description="Blue boxes fill in by themselves" />
+      <PageHeader title={existing ? `Edit LR ${existing.lrNo}` : "New booking"} description="Grey boxes fill in by themselves" />
       <ShipmentSection draft={draft} errors={errors} set={set} onCompany={onCompany} />
       <MoneySection draft={draft} errors={errors} set={set} received={received} />
       <TruckSection draft={draft} errors={errors} set={set} ownerPaid={ownerPaid} />
