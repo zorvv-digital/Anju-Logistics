@@ -1,7 +1,7 @@
 import { ArrowDownCircle, BarChart3, ChevronLeft, ChevronRight, FileText, IndianRupee, Lock, Table2, Truck } from "lucide-react"
 import { useState } from "react"
 import { useSearchParams } from "react-router-dom"
-import { ColumnChart, type ChartSeries } from "@/components/analytics/ColumnChart"
+import { AreaChart, type ChartSeries } from "@/components/analytics/AreaChart"
 import { CompanyBadge } from "@/components/common/badges"
 import { PageHeader } from "@/components/common/PageHeader"
 import { StatCard } from "@/components/common/StatCard"
@@ -22,12 +22,14 @@ import { cn } from "@/lib/utils"
 import { useCompanyLrs, useIsOwner, useLookups } from "@/store/selectors"
 import { useStore } from "@/store/useStore"
 
-// Brand red + a lighter step of the logo navy (#012162 itself is too dark for chart marks).
-// Pair validated with the dataviz palette checker: lightness band, chroma, CVD ΔE 24.9, contrast ≥ 3:1.
+// Billed is the main line (solid, filled); freight is a dashed guide line under it.
 const SERIES: ChartSeries[] = [
-  { name: "Billed", color: "#e7000b" },
-  { name: "Freight", color: "#2a4bb0" },
+  { name: "Billed", color: "#3b8fd9" },
+  { name: "Freight", color: "#64748b" },
 ]
+
+/** Short period pills under the chart */
+const PILL: Record<PeriodKind, string> = { all: "ALL", week: "1W", month: "1M", year: "1Y", custom: "DATES" }
 
 const KINDS: { value: PeriodKind; label: string }[] = [
   { value: "all", label: "All time" },
@@ -37,8 +39,6 @@ const KINDS: { value: PeriodKind; label: string }[] = [
   { value: "custom", label: "Dates" },
 ]
 
-/** ₹0 / ₹50K / ₹1L / ₹1.5L — compact, no trailing ".0" */
-const tick = (v: number) => (v === 0 ? "₹0" : moneyShort(v).replace(".0", ""))
 const pct = (f: number) => `${Math.abs(Math.round(f * 100))}%`
 
 /** "▲ 12% vs last month" — green when the move is good for the business. */
@@ -208,7 +208,7 @@ function Analytics() {
             <CardHeader>
               <CardTitle>Billed and freight</CardTitle>
               <CardDescription>
-                {rangeLabel(kind, range)} · hover a column for profit and bookings
+                {rangeLabel(kind, range)} · hover the line for profit and bookings
               </CardDescription>
               <CardAction>
                 <Button variant="ghost" size="sm" aria-pressed={showTable} onClick={() => setShowTable((s) => !s)}>
@@ -248,31 +248,37 @@ function Analytics() {
                   </TableBody>
                 </Table>
               ) : (
-                <>
-                  <ul className="mb-3 flex gap-4 text-xs text-muted-foreground" aria-label="Legend">
-                    {SERIES.map((s) => (
-                      <li key={s.name} className="flex items-center gap-1.5">
-                        <span aria-hidden className="size-2.5 rounded-[3px]" style={{ background: s.color }} />
-                        {s.name}
-                      </li>
-                    ))}
-                  </ul>
-                  <ColumnChart
-                    series={SERIES}
-                    format={money}
-                    formatTick={tick}
-                    ariaLabel={`Billed and freight, ${rangeLabel(kind, range)}`}
-                    columns={points.map((pt) => ({
-                      label: pt.label,
-                      title: pt.title,
-                      values: [pt.t.bill, pt.t.freight],
-                      extra: [
-                        { name: "Profit", value: money(pt.t.profit) },
-                        { name: pt.t.count === 1 ? "Booking" : "Bookings", value: String(pt.t.count) },
-                      ],
-                    }))}
-                  />
-                </>
+                <AreaChart
+                  series={SERIES}
+                  format={money}
+                  ariaLabel={`Billed and freight, ${rangeLabel(kind, range)}`}
+                  columns={points.map((pt) => ({
+                    title: pt.title,
+                    values: [pt.t.bill, pt.t.freight],
+                    extra: [
+                      { name: "Profit", value: money(pt.t.profit) },
+                      { name: pt.t.count === 1 ? "Booking" : "Bookings", value: String(pt.t.count) },
+                    ],
+                  }))}
+                  footer={
+                    <div className="flex gap-1" role="group" aria-label="Period">
+                      {KINDS.map((k) => (
+                        <button
+                          key={k.value}
+                          type="button"
+                          aria-pressed={kind === k.value}
+                          onClick={() => setFilter({ p: k.value })}
+                          className={cn(
+                            "rounded-md px-2 py-1 text-[11px] tracking-wide text-muted-foreground hover:text-foreground",
+                            kind === k.value && "font-bold text-foreground",
+                          )}
+                        >
+                          {PILL[k.value]}
+                        </button>
+                      ))}
+                    </div>
+                  }
+                />
               )}
             </CardContent>
           </Card>
