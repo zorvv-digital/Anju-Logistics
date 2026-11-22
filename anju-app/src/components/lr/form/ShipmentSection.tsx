@@ -33,8 +33,8 @@ export function ShipmentSection({ draft, errors, set, onCompany }: SectionProps 
         <Field label="Company" className="sm:col-span-2">
           <Tabs value={draft.company} onValueChange={(v) => onCompany(v as Company)}>
             <TabsList>
-              <TabsTrigger value="logistics" disabled={!!draft.id} className="data-active:text-primary">Anju Logistics</TabsTrigger>
-              <TabsTrigger value="roadways" disabled={!!draft.id} className="data-active:text-navy">Anju Roadways</TabsTrigger>
+              <TabsTrigger value="logistics" disabled={!!draft.id} className="data-active:bg-primary data-active:text-primary-foreground">Anju Logistics</TabsTrigger>
+              <TabsTrigger value="roadways" disabled={!!draft.id} className="data-active:bg-navy data-active:text-white">Anju Roadways</TabsTrigger>
             </TabsList>
           </Tabs>
         </Field>

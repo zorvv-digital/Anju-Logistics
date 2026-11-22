@@ -8,6 +8,12 @@
 @theme inline {
     /* Logo lettering navy — the Anju Roadways colour */
     --color-navy: #012162;
+    /* Pastel tile fills (dashboard tiles, avatars). Text on them stays in text tokens. */
+    --color-tint-rose: var(--tint-rose);
+    --color-tint-lavender: var(--tint-lavender);
+    --color-tint-mint: var(--tint-mint);
+    --color-tint-cream: var(--tint-cream);
+    --color-tint-sky: var(--tint-sky);
     --font-heading: var(--font-sans);
     --font-sans: 'Geist Variable', sans-serif;
     --color-sidebar-ring: var(--sidebar-ring);
@@ -52,7 +58,13 @@
 
 :root {
     /* Brand: red & white (from the Anju Logistics logo) */
-    --background: oklch(1 0 0);
+    /* Page is a soft grey so white cards and pastel tiles lift off it */
+    --background: oklch(0.975 0.002 286);
+    --tint-rose: #fde6e6;
+    --tint-lavender: #ebe6f8;
+    --tint-mint: #ddf1e2;
+    --tint-cream: #f8efd4;
+    --tint-sky: #e1e9f8;
     --foreground: oklch(0.18 0.01 20);
     --card: oklch(1 0 0);
     --card-foreground: oklch(0.18 0.01 20);
@@ -62,7 +74,7 @@
     --primary-foreground: oklch(1 0 0);
     --secondary: oklch(0.971 0.013 17.38);
     --secondary-foreground: oklch(0.444 0.177 26.899);
-    --muted: oklch(0.982 0.007 17);
+    --muted: oklch(0.965 0.003 286);
     --muted-foreground: oklch(0.52 0.02 20);
     --accent: oklch(0.971 0.013 17.38);
     --accent-foreground: oklch(0.444 0.177 26.899);
@@ -75,7 +87,7 @@
     --chart-3: oklch(0.444 0.177 26.899);
     --chart-4: oklch(0.637 0.237 25.331);
     --chart-5: oklch(0.396 0.141 25.723);
-    --radius: 0.625rem;
+    --radius: 0.75rem;
     --sidebar: oklch(1 0 0);
     --sidebar-foreground: oklch(0.18 0.01 20);
     --sidebar-primary: oklch(0.577 0.245 27.325);
@@ -88,6 +100,11 @@
 
 .dark {
     --background: oklch(0.145 0 0);
+    --tint-rose: #3a2224;
+    --tint-lavender: #2c2740;
+    --tint-mint: #1f3328;
+    --tint-cream: #3a3320;
+    --tint-sky: #1f2a40;
     --foreground: oklch(0.985 0 0);
     --card: oklch(0.205 0 0);
     --card-foreground: oklch(0.985 0 0);

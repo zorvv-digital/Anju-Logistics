@@ -10,8 +10,8 @@ export function CompanySwitch() {
     <Tabs value={company} onValueChange={(v) => setCompany(v as Company | "all")}>
       <TabsList>
         <TabsTrigger value="all">Both</TabsTrigger>
-        <TabsTrigger value="logistics" className="data-active:text-primary">Logistics</TabsTrigger>
-        <TabsTrigger value="roadways" className="data-active:text-navy">Roadways</TabsTrigger>
+        <TabsTrigger value="logistics" className="data-active:bg-primary data-active:text-primary-foreground">Logistics</TabsTrigger>
+        <TabsTrigger value="roadways" className="data-active:bg-navy data-active:text-white">Roadways</TabsTrigger>
       </TabsList>
     </Tabs>
   )
