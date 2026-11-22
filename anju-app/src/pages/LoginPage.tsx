@@ -35,9 +35,10 @@ export function LoginPage() {
 
   return (
     <div className="flex min-h-svh items-center justify-center bg-muted p-4">
-      <Card className="w-full max-w-sm">
+      <Card className="w-full max-w-sm border-t-4 border-t-primary">
         <CardHeader>
-          <CardTitle className="text-xl">Anju Logistics</CardTitle>
+          <img src="/logo.png" alt="" className="mb-2 h-auto w-full" />
+          <CardTitle className="sr-only">Anju Logistics</CardTitle>
           <CardDescription>Sign in to manage bookings</CardDescription>
         </CardHeader>
         <CardContent>

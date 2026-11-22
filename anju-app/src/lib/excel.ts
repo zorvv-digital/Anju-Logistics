@@ -71,7 +71,7 @@ export async function parseExcel(file: File, fallback: Company | null, ensure: E
     if (!lrNo && !consignor) return // blank line
     if (!company) return errors.push(`Row ${line}: company missing. Pick Logistics or Roadways at the top.`)
     if (!date) return errors.push(`Row ${line}: date is not valid`)
-    if (!consignor || !consignee) return errors.push(`Row ${line}: sender or receiver name missing`)
+    if (!consignor || !consignee) return errors.push(`Row ${line}: consignor or consignee name missing`)
     const billingParty = str(r["Billing Party"])
     const gst = str(r["GST No Billing Party"] ?? r["Billing Party GST No"]) || null
     const consigneeId = ensure("parties", consignee, billingParty === consignee ? { gst } : {})

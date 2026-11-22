@@ -1,4 +1,5 @@
 import type { Db, MasterKind } from "@/lib/types"
+import { GST } from "@/lib/gst"
 
 export interface MasterField {
   key: string
@@ -18,7 +19,6 @@ export interface MasterConfig {
   fields: MasterField[]
 }
 
-const GST: [RegExp, string] = [/^\d{2}[A-Z]{5}\d{4}[A-Z][A-Z0-9]Z[A-Z0-9]$/, "GST number should be 15 characters, like 32ALIPP8511G1Z6"]
 const PAN: [RegExp, string] = [/^[A-Z]{5}\d{4}[A-Z]$/, "PAN should be like ABCDE1234F"]
 const PHONE: [RegExp, string] = [/^[6-9]\d{9}$/, "Enter a 10-digit mobile number"]
 const TRUCK: [RegExp, string] = [/^[A-Z]{2}\d{1,2}[A-Z]{0,3}\d{3,4}$/, "Truck number should be like KL10AB1234"]

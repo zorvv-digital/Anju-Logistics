@@ -6,6 +6,8 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+    /* Logo lettering navy — the Anju Roadways colour */
+    --color-navy: #012162;
     --font-heading: var(--font-sans);
     --font-sans: 'Geist Variable', sans-serif;
     --color-sidebar-ring: var(--sidebar-ring);
@@ -49,38 +51,39 @@
 }
 
 :root {
+    /* Brand: red & white (from the Anju Logistics logo) */
     --background: oklch(1 0 0);
-    --foreground: oklch(0.145 0 0);
+    --foreground: oklch(0.18 0.01 20);
     --card: oklch(1 0 0);
-    --card-foreground: oklch(0.145 0 0);
+    --card-foreground: oklch(0.18 0.01 20);
     --popover: oklch(1 0 0);
-    --popover-foreground: oklch(0.145 0 0);
-    --primary: oklch(0.205 0 0);
-    --primary-foreground: oklch(0.985 0 0);
-    --secondary: oklch(0.97 0 0);
-    --secondary-foreground: oklch(0.205 0 0);
-    --muted: oklch(0.97 0 0);
-    --muted-foreground: oklch(0.556 0 0);
-    --accent: oklch(0.97 0 0);
-    --accent-foreground: oklch(0.205 0 0);
-    --destructive: oklch(0.577 0.245 27.325);
-    --border: oklch(0.922 0 0);
-    --input: oklch(0.922 0 0);
-    --ring: oklch(0.708 0 0);
-    --chart-1: oklch(0.87 0 0);
-    --chart-2: oklch(0.556 0 0);
-    --chart-3: oklch(0.439 0 0);
-    --chart-4: oklch(0.371 0 0);
-    --chart-5: oklch(0.269 0 0);
+    --popover-foreground: oklch(0.18 0.01 20);
+    --primary: oklch(0.577 0.245 27.325);
+    --primary-foreground: oklch(1 0 0);
+    --secondary: oklch(0.971 0.013 17.38);
+    --secondary-foreground: oklch(0.444 0.177 26.899);
+    --muted: oklch(0.982 0.007 17);
+    --muted-foreground: oklch(0.52 0.02 20);
+    --accent: oklch(0.971 0.013 17.38);
+    --accent-foreground: oklch(0.444 0.177 26.899);
+    --destructive: oklch(0.444 0.177 26.899);
+    --border: oklch(0.925 0.014 17);
+    --input: oklch(0.905 0.018 17);
+    --ring: oklch(0.704 0.191 22.216);
+    --chart-1: oklch(0.577 0.245 27.325);
+    --chart-2: oklch(0.808 0.114 19.571);
+    --chart-3: oklch(0.444 0.177 26.899);
+    --chart-4: oklch(0.637 0.237 25.331);
+    --chart-5: oklch(0.396 0.141 25.723);
     --radius: 0.625rem;
-    --sidebar: oklch(0.985 0 0);
-    --sidebar-foreground: oklch(0.145 0 0);
-    --sidebar-primary: oklch(0.205 0 0);
-    --sidebar-primary-foreground: oklch(0.985 0 0);
-    --sidebar-accent: oklch(0.97 0 0);
-    --sidebar-accent-foreground: oklch(0.205 0 0);
-    --sidebar-border: oklch(0.922 0 0);
-    --sidebar-ring: oklch(0.708 0 0);
+    --sidebar: oklch(1 0 0);
+    --sidebar-foreground: oklch(0.18 0.01 20);
+    --sidebar-primary: oklch(0.577 0.245 27.325);
+    --sidebar-primary-foreground: oklch(1 0 0);
+    --sidebar-accent: oklch(0.971 0.013 17.38);
+    --sidebar-accent-foreground: oklch(0.444 0.177 26.899);
+    --sidebar-border: oklch(0.925 0.014 17);
+    --sidebar-ring: oklch(0.704 0.191 22.216);
 }
 
 .dark {
@@ -90,8 +93,8 @@
     --card-foreground: oklch(0.985 0 0);
     --popover: oklch(0.205 0 0);
     --popover-foreground: oklch(0.985 0 0);
-    --primary: oklch(0.922 0 0);
-    --primary-foreground: oklch(0.205 0 0);
+    --primary: oklch(0.637 0.237 25.331);
+    --primary-foreground: oklch(1 0 0);
     --secondary: oklch(0.269 0 0);
     --secondary-foreground: oklch(0.985 0 0);
     --muted: oklch(0.269 0 0);
@@ -101,7 +104,7 @@
     --destructive: oklch(0.704 0.191 22.216);
     --border: oklch(1 0 0 / 10%);
     --input: oklch(1 0 0 / 15%);
-    --ring: oklch(0.556 0 0);
+    --ring: oklch(0.637 0.237 25.331);
     --chart-1: oklch(0.87 0 0);
     --chart-2: oklch(0.556 0 0);
     --chart-3: oklch(0.439 0 0);
@@ -109,12 +112,12 @@
     --chart-5: oklch(0.269 0 0);
     --sidebar: oklch(0.205 0 0);
     --sidebar-foreground: oklch(0.985 0 0);
-    --sidebar-primary: oklch(0.488 0.243 264.376);
+    --sidebar-primary: oklch(0.637 0.237 25.331);
     --sidebar-primary-foreground: oklch(0.985 0 0);
     --sidebar-accent: oklch(0.269 0 0);
     --sidebar-accent-foreground: oklch(0.985 0 0);
     --sidebar-border: oklch(1 0 0 / 10%);
-    --sidebar-ring: oklch(0.556 0 0);
+    --sidebar-ring: oklch(0.637 0.237 25.331);
 }
 
 @layer base {
@@ -133,6 +136,12 @@
   padding: 10mm;
   box-shadow: 0 1px 3px rgb(0 0 0 / 0.1);
 }
+
+/* Toast icons in the app's colours (cards themselves stay white) */
+[data-sonner-toast][data-type="success"] [data-icon] { color: oklch(0.596 0.145 163.225); }
+[data-sonner-toast][data-type="error"] [data-icon] { color: var(--destructive); }
+[data-sonner-toast][data-type="warning"] [data-icon] { color: oklch(0.666 0.179 58.318); }
+[data-sonner-toast][data-type="info"] [data-icon] { color: #012162; }
 
 @media print {
   @page { size: A4; margin: 8mm; }
